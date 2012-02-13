@@ -79,3 +79,14 @@ header#site-header h1 { position:absolute; left:10px; top:10px; }
 header#site-header h1 a { display:block; width:200px; height:200px; background:url(images/logo.png) top center no-repeat; text-indent:-9999px; }
 
 
+
+
+body { margin:0 auto; width:1200px; }
+#main-content { background-color:white; width:500px margin:4px; font-family:Helvetica; }
+article { float:left; width:40%; }
+#main-content img { float:left; width:300px; margin:15px; }
+#main-content h1 { background-color:white; margin:10px; font-size:150%; }
+#main-content h2 { background-color:white; margin:10px; font-size:80%; }
+#main-content p { background-color:white; margin:20px; }
+
+
