@@ -76,12 +76,16 @@ html[xmlns] .clearfix { display: block; }
 
 body { 
 		margin:0 auto; 
-		width: 1200px; 
+		width: 900px; 
 		text-align:center;
 		}
-
-header#site-header { 
-		position:relative; 
+header {
+		position:relative;
+		height:200px;
+		}
+header#site-header a { 
+		position:absolute;
+		float:left;
 		display:block; 
 		 width:300px; 
 		height:80px; 
@@ -90,20 +94,35 @@ header#site-header {
 		}
 		
 nav#top-menu { 
-		position:absolute top:0; 
-		left:0; 
-		background-color:white; 
+		position:absolute;
+		float:left; 
+		background-color:white;
 		margin:20px; 
-		height:20px; 
+		border-top:4px solid black;
+		border-bottom:4px solid black;
 		}
 		
-#top-menu li { 
-		float:left; 
+		
+#top-menu ul {
+		margin:0 auto;
+		width:900px;
+		list-style-type:disc;
+		}
+		
+#top-menu li {		
+				float:left; 
 		margin-left:20px; 
 		margin-right:20px; 
-		background-color:white; 
+		background-color:white;
+				padding:20px;
+}
+
+#top-menu li a { 
+ 
 		font-size:130%; 
 		text-align:center; 
+
+		text-decoration:none;
 		}
 
 section#content { 
@@ -114,9 +133,10 @@ section#content {
 		margin:20px; 
 		}
 		
-section#content img { 
+section#content img {
 		width:80%; 
 		margin:20px;
+		float:left;
 		}
 		
 section#content h1 { 
@@ -124,6 +144,7 @@ section#content h1 {
 		background-color:white; 
 		margin:20px; 
 		font-size:200%;
+		float:left;
 		}
 		
 section#content p { 
@@ -131,6 +152,8 @@ section#content p {
 		background-color:white; 
 		margin:20px; 
 		font-size:90%;
+		width:80%;
+		float:left;
 		}
 		
 footer#site-footer { 
