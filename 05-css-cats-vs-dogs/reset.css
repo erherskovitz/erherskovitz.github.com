@@ -74,17 +74,84 @@ html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
 
-body { margin: auto; width: 1200px; text-align:center; }
-header#site-header { position:relative; display:block;  width:300px; height:80px; background:url(images/dogsvscat-logo.gif) 
-no-repeat top left; text-indent:-9999px; }
-nav#top-menu { position:absolute top:0; left:0; background-color:white; margin:20px; height:20px; }
-#top-menu li { float:left; margin-left:20px; margin-right:20px; background-color:white; font-size:130%; }
+body { 
+		margin:0 auto; 
+		width: 1200px; 
+		text-align:center;
+		}
 
-section#content { position:relative; background-color:white; float:left; width:45%; margin:20px; }
-section#content img { width:80%; margin:20px; }
-section#content h1 { text-align:left; background-color:white; margin:20px; font-size:200%; }
-section#content p { text-align:left; background-color:white; margin:20px; font-size:90%; }
-footer#site-footer { background-color:white; padding:10px; clear:both; position:relative; }
-footer#footer-nav { background-color:white; top:0; left:0; margin:10px; width:100px; }
-#footer-nav li { float:left; margin-left:20px; margin-right:20px; background-color:white; }
+header#site-header { 
+		position:relative; 
+		display:block; 
+		 width:300px; 
+		height:80px; 
+		background:url(images/dogsvscat-logo.gif) no-repeat top left; 
+		text-indent:-9999px; 
+		}
+		
+nav#top-menu { 
+		position:absolute top:0; 
+		left:0; 
+		background-color:white; 
+		margin:20px; 
+		height:20px; 
+		}
+		
+#top-menu li { 
+		float:left; 
+		margin-left:20px; 
+		margin-right:20px; 
+		background-color:white; 
+		font-size:130%; 
+		text-align:center; 
+		}
+
+section#content { 
+		position:relative; 
+		background-color:white; 
+		float:left; 
+		width:45%; 
+		margin:20px; 
+		}
+		
+section#content img { 
+		width:80%; 
+		margin:20px;
+		}
+		
+section#content h1 { 
+		text-align:left; 
+		background-color:white; 
+		margin:20px; 
+		font-size:200%;
+		}
+		
+section#content p { 
+		text-align:left; 
+		background-color:white; 
+		margin:20px; 
+		font-size:90%;
+		}
+		
+footer#site-footer { 
+		background-color:white; 
+		padding:10px; 
+		clear:both; 
+		position:relative; 
+		}
+		
+footer#footer-nav { 
+		background-color:white; 
+		top:0; left:0; 
+		margin:10px; 
+		width:100px; 
+		}
+		
+#footer-nav li { 
+		float:left; 
+		margin-left:20px; 
+		margin-right:20px; 
+		background-color:white; 
+		}
+		
 
