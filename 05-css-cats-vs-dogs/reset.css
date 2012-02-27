@@ -110,18 +110,16 @@ nav#top-menu {
 		}
 		
 #top-menu li {		
-				float:left; 
+		float:left; 
 		margin-left:20px; 
 		margin-right:20px; 
 		background-color:white;
-				padding:20px;
+		padding:20px;
 }
 
 #top-menu li a { 
- 
 		font-size:130%; 
 		text-align:center; 
-
 		text-decoration:none;
 		}
 
