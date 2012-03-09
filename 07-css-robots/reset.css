@@ -73,7 +73,6 @@ html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
 body { 
-		background-color:pink;
 		margin:0 auto;
 		width:900px;
 		text-align:center;
@@ -92,7 +91,9 @@ header#site-header h1 a {
 		background-color:red;
 		text-decoration:none;
 		float:left;
-		display:block;
+		font-family:"lobster",serif;
+		font-style: normal;
+		font-weight: 400;
 		
 		}
 
@@ -101,6 +102,12 @@ header#site-header nav a {
 		text-decoration:none;
 		float:right;
 
+		}
+
+header#site-header img {
+		float:left;
+		width:20%;
+		
 		}
 
 div#menu-wrapper {
@@ -163,6 +170,7 @@ article#page h1 {
 		width:60%;
 		font-size:220%;
 		margin-top:20px;
+		font-family:Lobster;
 		
 		}
 		
@@ -172,6 +180,7 @@ article#page h2 {
 		float:left;
 		width:60%;
 		font-size:120%;
+		font-family:Museo-Sans;
 		
 		}
 		
