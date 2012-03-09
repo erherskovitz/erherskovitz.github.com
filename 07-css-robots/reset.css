@@ -97,10 +97,19 @@ header#site-header h1 a {
 		
 		}
 
+header#site-header nav {
+		float:right;
+		background-color:pink;
+		width:20px;
+		
+		}
+
 header#site-header nav a {
 		background-color:orange;
 		text-decoration:none;
 		float:right;
+		font-size:8pt;
+		height:10px;
 
 		}
 
