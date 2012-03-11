@@ -54,7 +54,7 @@ table {
 
 .centered { 
   margin:0 auto;
-  width:960px;
+  width:800px;
 }
 
 
@@ -76,14 +76,14 @@ body {
 		margin:0 auto;
 		width:900px;
 		text-align:center;
-		margin:50px
+
 
 		}
 
 header {
-		background-color:blue;
+		background-color:#eef4d8;
 		position:relative;
-		height:20px;
+		height:80px;
 
 		}
 	
@@ -99,19 +99,18 @@ header#site-header h1 a {
 
 header#site-header nav {
 		float:right;
-		background-color:pink;
 		width:20con0px;
 		height:5px;
+		margin-right:60px;
 		
 		}
 
 header#site-header nav a {
-		background-color:orange;
 		text-decoration:none;
 		float:right;
 		font-size:8pt;
 		height:5px;
-		color:white;
+		color:#8B4500;
 		padding:10px;
 
 		}
@@ -129,7 +128,7 @@ div#menu-wrapper {
 		}
 
 nav#main-menu {
-		background-color:brown;
+		background-color:#8B4500;
 		padding-left:20px;
 		width:120%;
 
@@ -137,14 +136,13 @@ nav#main-menu {
 
 #main-menu ul {
 		background-color:white;
-		margin:0 auto;
 		width:900px;
 
 		}
 
 #main-menu li {
 		float:left;
-		background-color:brown;
+		background-color:#8B4500;
 		padding:10px;
 		
 		}
@@ -153,11 +151,12 @@ nav#main-menu {
 		text-align:center;
 		text-decoration:none;
 		color:white;
+		text-transform:uppercase;
 
 		}
 
 div#content-wrapper {
-		background-color:brown;
+		background-color:#8B4500;
 		padding:20px;
 		
 		}
@@ -167,24 +166,28 @@ div#content {
 		float:left;
 		width:40%
 		margin:50px;
+		width:90%
+		padding:50px;
 
 		}
 
 article#page {
-		width:60%
+		width:30%
 		float:left;
 		position:absolute;
+		margin-left:40px;
 
 		}
 
 article#page h1 {
 		text-align:left;
-		background-color:green;
+		color:#8B4500;
 		float:left;
-		width:100%;
+		width:80%;
 		font-size:220%;
 		margin-top:20px;
 		font-family:Lobster;
+		padding-bottom:5px;
 		
 		}
 		
@@ -193,39 +196,48 @@ article#page h2 {
 		background-color:white;
 		float:left;
 		width:60%;
-		font-size:120%;
+		font-size:100%;
 		font-family:Museo-Sans;
+		text-transform:uppercase;
+		color:#8B4500;
+		font-variant:small-caps;
+		padding-bottom:5px;
 		
 		}
 		
 article#page p {
 		text-align:left;
-		background-color:red;
 		float:left;
-		width:60%;
+		width:55%;
 		font-size:8pt;
+		color:7F5528;
+		padding-bottom:5px;
 		
 		}
 
 aside#sidebar {
-		background-color:tan;
 		float:right;
-		width:30%;
+		width:20%;
 		margin:10px;
-		display:block;
+		display:inline;
+		padding-top:45px;
+		margin-right:50px;
 		
 		}
 		
 aside#sidebar h1 {
 		text-align:left;
-		background:green;
 		float:left;
+		color:#8B4500;
+		text-transform:uppercase;
+		padding-bottom:5px;
 		
 		}
 
 aside#sidebar ul {
 		margin:0 auto;
 		float:left;
+		padding-bottom:5px;
 		
 		}
 
@@ -237,7 +249,8 @@ aside#sidebar li {
 
 aside#sidebar li a {
 		float:left;
-		color:brown;
+		color:#8B4500;
+		font-size:8pt;
 		
 		}
 
@@ -245,67 +258,81 @@ aside#sidebar a img {
 		float:left;
 		margin:0 auto;
 		width:100%;
+		padding-bottom:5px;
 		
 		}
 
 footer#site-footer {
-		background-color:brown;
+		background-color:#8B4500;
 		clear:both;
 		position:relative;
 		height:100px;
-		padding-top:20px;
+		padding-top:30px;
+		display:block;
+		margin-top:30px;
 		
 		}
 
 section#footer-contact {
 		margin-left:20px;
 		float:left;
-		background-color:brown;
-		width:20%
+		width:25%;
+		text-align:left;
+		display:block;
 		
 		}
 
 section#footer-contact h1 {
 		color:white;
 		float:left;
+		text-align:left;
+		width:100%;
+		text-transform:uppercase;
 		
 		}
 
 section#footer-contact p {
 		float:left;
 		color:white;
+		text-align:left;
+		width:60%;
+		font-size:8pt;
 		
 		}
 
 section#footer-follow {
-		margin:0 auto;
 		float:right;
-		background-color:brown;
-		width:10%
+		background-color:#8B4500;
+		width:20%;
 		position:relative;
+		text-align:left;
 		
 		}
 
 section#footer-follow h1 {
 		float:left;
 		color:white;
-		width:40%;
+		width:100%;
+		text-align:left;
+		text-transform:uppercase;
 		
 		}
 
 section#footer-follow ul {
 		float:left;
 		height:20px;
-		padding-top:20px;
+		padding-top:10px;
+		width:100%;
 		
 		}
 		
 section#footer-follow ul li {
 		float:left;
-		padding:-20px;
+		padding:-30px;
+		
 		}
 
 section#footer-follow li a img {
-		width:60%
+		width:70%;
 		
 		}
