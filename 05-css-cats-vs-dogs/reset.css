@@ -79,10 +79,12 @@ body {
 		width: 900px; 
 		text-align:center;
 		}
+		
 header {
 		position:relative;
 		height:200px;
 		}
+		
 header#site-header a { 
 		position:absolute;
 		float:left;
@@ -90,14 +92,16 @@ header#site-header a {
 		 width:300px; 
 		height:80px; 
 		background:url(images/dogsvscat-logo.gif) no-repeat top left; 
-		text-indent:-9999px; 
+		text-indent:-9999px;
+		
+		
 		}
 		
 nav#top-menu { 
 		position:absolute;
-		float:left; 
+		float:right; 
 		background-color:white;
-		margin:20px; 
+		margin-top:20px; 
 		border-top:4px solid black;
 		border-bottom:4px solid black;
 		}
@@ -107,6 +111,12 @@ nav#top-menu {
 		margin:0 auto;
 		width:900px;
 		list-style-type:disc;
+		margin-left:30px;
+		}
+
+#top-menu ul span {
+		list-style-type:none;
+		
 		}
 		
 #top-menu li {		
@@ -115,12 +125,14 @@ nav#top-menu {
 		margin-right:20px; 
 		background-color:white;
 		padding:20px;
-}
+		}
 
 #top-menu li a { 
 		font-size:130%; 
 		text-align:center; 
 		text-decoration:none;
+		text-transform:uppercase;
+		color:black;
 		}
 
 section#content { 
@@ -128,11 +140,12 @@ section#content {
 		background-color:white; 
 		float:left; 
 		width:45%; 
-		margin:20px; 
+		margin:20px;
+		
 		}
 		
 section#content img {
-		width:80%; 
+		width:90%; 
 		margin:20px;
 		float:left;
 		}
@@ -140,9 +153,11 @@ section#content img {
 section#content h1 { 
 		text-align:left; 
 		background-color:white; 
-		margin:20px; 
-		font-size:200%;
+		margin:20px;
+		margin-top:5px;
+		font-size:180%;
 		float:left;
+		
 		}
 		
 section#content p { 
@@ -150,8 +165,11 @@ section#content p {
 		background-color:white; 
 		margin:20px; 
 		font-size:90%;
-		width:80%;
+		width:90%;
 		float:left;
+		margin-top:5px;
+		line-height:14pt;
+		
 		}
 		
 footer#site-footer { 
@@ -159,6 +177,8 @@ footer#site-footer {
 		padding:10px; 
 		clear:both; 
 		position:relative; 
+		border-top:4px solid black;
+		width:100%;
 		}
 		
 footer#footer-nav { 
@@ -167,12 +187,29 @@ footer#footer-nav {
 		margin:10px; 
 		width:100px; 
 		}
+
+#footer-nav ul span {
+		float:right;
+		
+		}
 		
 #footer-nav li { 
 		float:left; 
-		margin-left:20px; 
-		margin-right:20px; 
-		background-color:white; 
+		margin-left:5px; 
+		margin-right:5px; 
+		background-color:white;
+		text-transform:lowercase;
+		
+		
 		}
+		
+#footer-nav li a {
+		text-decoration:none;
+		color:red;
+		text-transform:lowercase;
+		
+		}
+
+
 		
 
