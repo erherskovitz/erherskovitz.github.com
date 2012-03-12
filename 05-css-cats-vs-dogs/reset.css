@@ -83,6 +83,9 @@ body {
 header {
 		position:relative;
 		height:200px;
+		top:25px;
+		bottom:25px;
+		
 		}
 		
 header#site-header a { 
@@ -93,6 +96,7 @@ header#site-header a {
 		height:80px; 
 		background:url(images/dogsvscat-logo.gif) no-repeat top left; 
 		text-indent:-9999px;
+	
 		
 		}
 		
@@ -110,7 +114,9 @@ nav#top-menu {
 		width:900px;
 		list-style-type:disc;
 		text-align:center;
-		list-style-position:inside;
+		list-style-position:outside;
+		padding-left:35px;
+		height:65px;
 		
 		}
 
@@ -120,7 +126,7 @@ nav#top-menu {
 		}
 		
 #top-menu li {		
-		display:inline-block; 
+		float:left;
 		margin-left:20px; 
 		margin-right:20px; 
 		background-color:white;
