@@ -173,13 +173,13 @@ nav#main-menu {
 #content {
 		height:50px;
 		width:50%;
-		padding:50px;
+		padding:20px;
 		margin:0 auto;
 
 		}
 
 article#page {
-		width:70%;
+		width:60%;
 		float:left;
 		position:relative;
 		font-family:"Museo-Sans";
@@ -190,7 +190,7 @@ article#page h1 {
 		text-align:left;
 		color:#8B4500;
 		float:left;
-		width:50%;
+		width:140%;
 		font-size:220%;
 		margin-top:20px;
 		font-family: "lobster",serif;
@@ -202,7 +202,7 @@ article#page h2 {
 		text-align:left;
 		background-color:white;
 		float:left;
-		width:60%;
+		width:80%;
 		font-size:100%;
 		font-family:"Museo-Sans";
 		text-transform:uppercase;
@@ -215,7 +215,7 @@ article#page h2 {
 article#page p {
 		text-align:left;
 		float:left;
-		width:55%;
+		width:80%;
 		font-size:7pt;
 		color:7F5528;
 		padding-bottom:5px;
@@ -224,13 +224,10 @@ article#page p {
 		}
 
 aside#sidebar {
-		float:right;
+		float:left;
 		width:20%;
-		margin:10px;
 		display:inline;
-		padding-top:45px;
-		margin-right:50px;
-		font-family:"Museo-Sans";
+		font-family:"Verdana";
 		
 		}
 		
@@ -291,7 +288,6 @@ footer#site-footer {
 		}
 
 section#footer-contact {
-		margin-left:65px;
 		float:left;
 		width:25%;
 		text-align:left;
@@ -305,7 +301,7 @@ section#footer-contact h1 {
 		text-align:left;
 		width:100%;
 		text-transform:uppercase;
-		font-family:"Museo-Sans";
+		font-family:"Verdana";
 		
 		}
 
@@ -315,7 +311,7 @@ section#footer-contact p {
 		text-align:left;
 		width:60%;
 		font-size:8pt;
-		font-family:"Museo-Sans";
+		font-family:"Verdana";
 		
 		}
 
@@ -325,7 +321,6 @@ section#footer-follow {
 		width:20%;
 		position:relative;
 		text-align:left;
-		margin-right:60px;
 		font-family:"Museo-Sans";
 		
 		}
