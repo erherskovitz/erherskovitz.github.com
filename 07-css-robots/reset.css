@@ -119,7 +119,6 @@ header#site-header nav a {
 header#site-header img {
 		float:left;
 		width:20%;
-		margin-left:40px;
 		
 		}
 
@@ -131,7 +130,6 @@ header#site-header img {
 
 nav#main-menu {
 		background-color:#8B4500;
-		padding-left:20px;
 		margin:0 auto;
 		width:50%;
 
@@ -157,6 +155,7 @@ nav#main-menu {
 		text-decoration:none;
 		color:white;
 		text-transform:uppercase;
+		font-fami
 
 		}
 
@@ -180,13 +179,10 @@ nav#main-menu {
 		}
 
 article#page {
-		width:30%
+		width:70%;
 		float:left;
 		position:relative;
-		margin-left:40px;
-		padding-bottom:20px;
-		margin-bottom:40px;
-		font-family:"Helvetica";
+		font-family:"Museo-Sans";
 
 		}
 
@@ -194,10 +190,10 @@ article#page h1 {
 		text-align:left;
 		color:#8B4500;
 		float:left;
-		width:80%;
+		width:50%;
 		font-size:220%;
 		margin-top:20px;
-		font-family:"Lobster";
+		font-family: "lobster",serif;
 		padding-bottom:5px;
 		
 		}
