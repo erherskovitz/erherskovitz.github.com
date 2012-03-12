@@ -195,7 +195,7 @@ article#page h1 {
 		width:80%;
 		font-size:220%;
 		margin-top:20px;
-		font-family:Lobster;
+		font-family:"Lobster";
 		padding-bottom:5px;
 		
 		}
@@ -221,6 +221,7 @@ article#page p {
 		font-size:7pt;
 		color:7F5528;
 		padding-bottom:5px;
+		font-family:"Museo-Sans";
 		
 		}
 
@@ -231,6 +232,7 @@ aside#sidebar {
 		display:inline;
 		padding-top:45px;
 		margin-right:50px;
+		font-family:"Museo-Sans";
 		
 		}
 		
@@ -240,6 +242,7 @@ aside#sidebar h1 {
 		color:#8B4500;
 		text-transform:uppercase;
 		padding-bottom:5px;
+		font-family:"Museo-Sans";
 		
 		}
 
@@ -247,6 +250,7 @@ aside#sidebar ul {
 		margin:0 auto;
 		float:left;
 		padding-bottom:5px;
+		font-family:"Museo-Sans";
 		
 		}
 
@@ -302,6 +306,7 @@ section#footer-contact h1 {
 		text-align:left;
 		width:100%;
 		text-transform:uppercase;
+		font-family:"Museo-Sans";
 		
 		}
 
@@ -311,6 +316,7 @@ section#footer-contact p {
 		text-align:left;
 		width:60%;
 		font-size:8pt;
+		font-family:"Museo-Sans";
 		
 		}
 
@@ -321,6 +327,7 @@ section#footer-follow {
 		position:relative;
 		text-align:left;
 		margin-right:60px;
+		font-family:"Museo-Sans";
 		
 		}
 
@@ -330,6 +337,7 @@ section#footer-follow h1 {
 		width:100%;
 		text-align:left;
 		text-transform:uppercase;
+		font-family:"Museo-Sans";
 		
 		}
 
