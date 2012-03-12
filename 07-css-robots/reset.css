@@ -74,7 +74,7 @@ html[xmlns] .clearfix { display: block; }
 
 body { 
 		margin:0 auto;
-		width:900px;
+		width:960px;
 		text-align:center;
 		font-family:"Museo-Sans";
 
@@ -82,9 +82,12 @@ body {
 
 header {
 		background-color:#eef4d8;
-		position:relative;
 		height:80px;
 
+		}
+#site-wrapper {
+		background-color:brown;
+		
 		}
 	
 header#site-header h1 a {
