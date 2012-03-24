@@ -73,52 +73,78 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
-
+ 
+ 
 body { 
 		margin:0 auto; 
-		width: 900px; 
+		width: 100% 
 		text-align:center;
+		max-width:1024px;
+		min-width:500px;
+		
 		}
 		
 header {
-		position:relative;
-		height:200px;
-		top:25px;
-		bottom:25px;
+		width:50%;
+		margin:0 auto;
+		
+		}
+#site-wrapper {
+		width:100%;
+		margin:0 auto;
+		max-width:1024px;
 		
 		}
 		
 header#site-header a { 
-		position:absolute;
 		float:left;
-		display:block; 
-		 width:300px; 
+		margin:0 auto;
+		width:50%;
 		height:80px; 
 		background:url(images/dogsvscat-logo.gif) no-repeat top left; 
 		text-indent:-9999px;
 	
 		
 		}
+
+img {
+		margin:0 auto;
+		width:100%;
+		
+		
+		}
+		
+nav-wrapper {
+		width:100%;
+		
+		}
 		
 nav#top-menu {  
-		background-color:white;
 		margin-top:20px; 
 		border-top:4px solid black;
 		border-bottom:4px solid black;
 		
 		}
 		
-		
 #top-menu ul {
 		margin:0 auto;
-		width:900px;
+		width:80%;
 		list-style-type:disc;
 		text-align:center;
 		list-style-position:outside;
-		padding-left:35px;
 		height:65px;
+		font-size:1.3em;
 		
 		}
+ @media screen and (max-width:970px) {
+ #top-menu ul { font-size:1.2em;}
+ }
+@media screen and (max-width:700px) {
+ #top-menu ul { font-size:1em; }
+ }
+@media screen and (max-width:600px) {
+ #top-menu ul { font-size:.8em; }
+ }
 
 #top-menu ul span {
 		list-style-type:none;
@@ -129,25 +155,36 @@ nav#top-menu {
 		float:left;
 		margin-left:20px; 
 		margin-right:20px; 
-		background-color:white;
 		padding:20px;
 		
 		}
+@media screen and (max-width:500px) {
+ #top-menu li { margin-left:5px; margin-right:5px; padding-left:3px; 
+ padding-right:3px;}
+ }
+@media screen and (max-width:700px) {
+ #top-menu li { margin-left:10px; margin-right:10px; padding-left:5px; 
+ padding-right:5px;}
+ }
+@media screen and (max-width:990px) {
+ #top-menu li { margin-left:11px; margin-right:11px; padding-left:5px; 
+ padding-right:5px;}
+ }
+
 
 #top-menu li a { 
-		font-size:130%; 
 		text-align:center; 
 		text-decoration:none;
 		text-transform:uppercase;
 		color:black;
+		
 		}
 
 section#content { 
-		position:relative; 
 		background-color:white; 
 		float:left; 
 		width:45%; 
-		margin:20px;
+		margin-left:1%;
 		
 		}
 		
@@ -162,28 +199,33 @@ section#content h1 {
 		background-color:white; 
 		margin:20px;
 		margin-top:5px;
-		font-size:180%;
+		font-size:2em;
 		float:left;
 		
 		}
+@media screen and (max-width:600px) {
+ section#content h1 { font-size:1.3em; }
+ }
 		
 section#content p { 
 		text-align:left; 
 		background-color:white; 
 		margin:20px; 
-		font-size:90%;
+		font-size:1em;
 		width:90%;
 		float:left;
 		margin-top:5px;
 		line-height:14pt;
 		
 		}
-		
+@media screen and (max-width:600px) {	
+	section#content p { font-size:.8em; }
+		}
 footer#site-footer { 
 		background-color:white; 
 		padding:10px; 
-		clear:both; 
-		position:relative; 
+		clear:both;
+		float:left;
 		border-top:4px solid black;
 		width:100%;
 		}
@@ -194,11 +236,13 @@ footer#footer-nav {
 		margin:10px; 
 		width:100px; 
 		}
-
 #footer-nav ul span {
 		float:right;
-		
 		}
+@media screen and (max-width:900px) {
+ #footer-nav ul span { float:left; }
+ }
+
 		
 #footer-nav li { 
 		float:left; 
