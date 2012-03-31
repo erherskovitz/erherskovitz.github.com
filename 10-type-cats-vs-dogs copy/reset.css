@@ -109,16 +109,15 @@ header {
 		}
 		
 h1 {
-		font-size:8em;
+		font-size:6em;
 		font-family: 'LeagueGothicRegular';
-		text-transform:uppercase;
 		width:100%;
-		margin:0 auto;
-		float:left;
+		margin-right:auto;
+		margin-left:auto;
 		padding-top:10px;
 		padding-bottom:10px;
-	
-		
+		vertical-align:middle;
+		text-align:center;
 		
 		}
 		
@@ -126,13 +125,13 @@ h1 span {
 		font-family:Georgia,serif;
 		font-style:italic;
 		font-weight:bold;
-		font-size:.3em;
+		font-size:.5em;
 		color:grey;
-		text-transform:lowercase;
 		border-top:2px solid grey;
 		border-bottom:2px solid grey;
-		padding-bottom:10px;
-		margin-right:10px;
+		vertical-align:20px;
+		margin:0 auto;
+		line-height:.5em;
 
 		}
 
@@ -235,7 +234,7 @@ section#content h1 {
 		background-color:white; 
 		margin:20px;
 		margin-top:5px;
-		font-size:2em;
+		font-size:1.3em;
 		float:left;
 		font-family:Georgia,serif;
 		text-transform:none;
