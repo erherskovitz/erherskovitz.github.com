@@ -91,7 +91,7 @@ body {
 		width: 100% 
 		text-align:center;
 		max-width:1024px;
-		min-width:500px;
+		min-width:650px;
 		
 		}
 		
@@ -134,6 +134,18 @@ h1 span {
 		line-height:.5em;
 
 		}
+@media screen and (max-width:970px) {
+h1 { font-size:5.7em;}
+h1 span { font-size:.4em}
+}
+@media screen and (max-width:700px) {
+h1 { font-size:5.3em; }
+h1 span { font-size:.3em}
+ }
+@media screen and (max-width:600px) {
+h1 { font-size:5em; }
+h1 span { font-size:.3em}
+ }
 
 header#site-header a { 
 		float:left;
@@ -156,24 +168,32 @@ nav#top-menu {
 		border-top:4px solid black;
 		border-bottom:4px solid black;
 		vertical-align:center;
+		text-align:center;
+		margin-right:auto;
+		margin-left:auto;
 		
 		}
 		
 #top-menu ul {
-		margin:0 auto;
+		margin-right:auto;
+		margin-left:auto;
 		width:80%;
 		list-style-type:disc;
 		text-align:center;
 		list-style-position:outside;
 		height:30px;
 		font-size:1.3em;
+		text-align:center;
 		
 		}
 @media screen and (max-width:970px) {
 #top-menu ul { font-size:1.2em;}
  }
+@media screen and (max-width:750px) {
+#top-menu ul { font-size:1em;}
+ }
 @media screen and (max-width:700px) {
- #top-menu ul { font-size:1em; }
+ #top-menu ul { font-size:.8em; }
  }
 @media screen and (max-width:600px) {
  #top-menu ul { font-size:.8em; }
@@ -191,19 +211,20 @@ nav#top-menu {
 		padding-bottom:20px;
 		padding-right:20px;
 		padding-left:20px;
+		padding-top:4px;
 		
 		}
 @media screen and (max-width:500px) {
- #top-menu li { margin-left:5px; margin-right:5px; padding-left:3px; 
- padding-right:3px;}
+ #top-menu li { margin-left:1px; margin-right:1px; padding-left:.5px; 
+ padding-right:.5px; padding-top:2px;}
  }
 @media screen and (max-width:700px) {
  #top-menu li { margin-left:10px; margin-right:10px; padding-left:5px; 
- padding-right:5px;}
+ padding-right:5px; padding-top:5px;}
  }
 @media screen and (max-width:990px) {
- #top-menu li { margin-left:11px; margin-right:11px; padding-left:5px; 
- padding-right:5px;}
+ #top-menu li { margin-left:11px; margin-right:11px; padding-left:17px; 
+ padding-right:17px; padding-top:6px; }
  }
 
 
