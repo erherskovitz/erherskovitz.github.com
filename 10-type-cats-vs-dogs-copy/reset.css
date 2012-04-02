@@ -108,7 +108,7 @@ header {
 		
 		}
 		
-h1 {
+#site-header h1 {
 		font-size:6em;
 		font-family: 'LeagueGothicRegular';
 		width:100%;
@@ -121,7 +121,7 @@ h1 {
 		
 		}
 		
-h1 span {
+#site-header h1 span {
 		font-family:Georgia,serif;
 		font-style:italic;
 		font-weight:bold;
