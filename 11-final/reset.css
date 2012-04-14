@@ -71,14 +71,25 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
+@font-face {
+    font-family: 'QuicksandBook';
+    src: url('font/Quicksand_Book-webfont.eot');
+    src: url('font/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Quicksand_Book-webfont.woff') format('woff'),
+         url('font/Quicksand_Book-webfont.ttf') format('truetype'),
+         url('font/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'QuicksandBold';
-    src: url('Quicksand_Bold-webfont.eot');
-    src: url('Quicksand_Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Quicksand_Bold-webfont.woff') format('woff'),
-         url('Quicksand_Bold-webfont.ttf') format('truetype'),
-         url('Quicksand_Bold-webfont.svg#QuicksandBold') format('svg');
+    src: url('font/Quicksand_Bold-webfont.eot');
+    src: url('font/Quicksand_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Quicksand_Bold-webfont.woff') format('woff'),
+         url('font/Quicksand_Bold-webfont.ttf') format('truetype'),
+         url('font/Quicksand_Bold-webfont.svg#QuicksandBold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -86,11 +97,11 @@ html[xmlns] .clearfix { display: block; }
 
 @font-face {
     font-family: 'QuicksandBoldOblique';
-    src: url('Quicksand_Bold_Oblique-webfont.eot');
-    src: url('Quicksand_Bold_Oblique-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Quicksand_Bold_Oblique-webfont.woff') format('woff'),
-         url('Quicksand_Bold_Oblique-webfont.ttf') format('truetype'),
-         url('Quicksand_Bold_Oblique-webfont.svg#QuicksandBoldOblique') format('svg');
+    src: url('font/Quicksand_Bold_Oblique-webfont.eot');
+    src: url('font/Quicksand_Bold_Oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Quicksand_Bold_Oblique-webfont.woff') format('woff'),
+         url('font/Quicksand_Bold_Oblique-webfont.ttf') format('truetype'),
+         url('font/Quicksand_Bold_Oblique-webfont.svg#QuicksandBoldOblique') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -106,11 +117,33 @@ body {
 		
 		}
 
+#site-wrapper {
+		margin-right:auto;
+		margin-left:auto;
+
+		}
+@media screen and (max-width:1000px) {
+#header-wrapper { height:190px; }
+}
+@media screen and (max-width:700px) {
+#header-wrapper { height:120px; }
+}
+
+	
+@media screen and (max-width:1000px) {
+header.site-header { height:100px; }
+}
+@media screen and (max-width:900px) {
+header.site-header { height:80px; }
+}
+
+
 header.site-header {
 		width:25%;
 		margin-right:auto;
 		margin-left:auto;
 		height:200px;
+		padding-bottom:15px;
 		
 		}
 header.site-header a {
@@ -127,14 +160,13 @@ header.site-header a img {
 		
 		}
 
-#nav-wrapper {
-		width:110%;
-		
-		}
 		
 nav#sidebar-nav {
 		width:20%;
-		float:left;
+		position:fixed;
+    	background-color:white;
+    	left:4%;
+		right:60%;
 		
 		}
 		
@@ -145,7 +177,8 @@ nav#sidebar-nav ul {
 		
 nav#sidebar-nav li {
 		text-align:right;
-		font-size:1em;
+		line-height:1.4em;
+		font-size:1.3em;
 		
 		
 		}
@@ -154,6 +187,7 @@ nav#sidebar-nav li a {
 		text-decoration:none;
 		color:#00bb66;
 		font-family: 'QuicksandBold', Arial, sans-serif;
+		display:block;
 		
 		}
 		
@@ -174,6 +208,7 @@ span nav#secondary-sidebar-nav ul li a{
 		
 		}
 
+
 section#content {
 		margin-right:auto;
 		margin-left:auto;
@@ -182,6 +217,36 @@ section#content {
 		
 		}
 
+section#content p {
+		font-size:.8em;
+		font-family: 'QuicksandBook'; Arial, sans-serif;
+		
+		}
+
+section#content h1 {
+		font-family: 'QuicksandBoldOblique', Arial, sans-serif;
+		font-size:1em;
+		line-height:1.3em;
+		padding-top:15px;
+		
+		}
+section#content h1 ul {
+		display:inline-block;
+		
+		}
+section#content li {
+		display:inline-block;
+		
+		}
+		
+section#content li a {
+		font-family: 'QuicksandBold', Arial, sans-serif;
+		font-size:.8em;
+		text-decoration:none;
+		line-height:1em;
+		
+		}
+		
 section#content li img {
 		width:100%;
 		
@@ -189,18 +254,46 @@ section#content li img {
 		
 section#content img {
 		width:100%;
+		padding-bottom:15px;
 		
 		}
 
-footer#site-footer nav {
-		display:block
+#footer-wrapper {
+		clear:both;
+		width:100%;
+		padding-top:40px;
+		
+		}
+
+footer#site-footer {
+		width:45%;
+		margin-right:auto;
+		margin-left:auto;
+		}
+
+footer nav#footer-nav {
+		display:inline-block;
 		margin-right:auto;
 		margin-left:auto;
 		
 		}
 		
+footer#footer-nav ul {
+		display:inline-block;
+		text-align:center;
+		
+		}
+		
 footer#site-footer nav li {
 		font-size:.8em;
+		font-family: 'QuicksandBold', Arial, sans-serif;
+		display:inline-block;
+		padding-right:3%;
 		
+		
+		}
+
+footer#site-footer nav li a {
+		text-decoration:none;
 		
 		}
