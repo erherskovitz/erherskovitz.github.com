@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  	<meta charset="UTF-8">
+  	<title>Little Fox Design</title>
+  	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+  	<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider/themes/pascal/pascal.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider/themes/orman/orman.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+  </head>
+  
+  <body>
+  	<div id='site-wrapper'>
+  	  	<header class="site-header">
+  			<a href="home.html"><img src="images/Logo.png" alt="Little Fox Design"/></a>
+  	  	</header>
+  	</div>
+  	
+  	<div id='nav-wrapper'>
+  	 	<nav id="sidebar-nav">
+  	  		<ul>
+  	  			<li><a href="about.html">About</a></li>
+  	  			<li><a href="Design.html">Design</a></li>
+  	  			<li><a href="Print.html">Print</a></li>
+  	  		</ul>
+  	 	</nav>
+  	</div>
+  	<div id="wrapper">
+
+        <div class="slider-wrapper theme-default">
+            <div class="ribbon"></div>
+            <div id="slider" class="nivoSlider">
+            	<a href="Printmaking.html"><img src="images/hairbowpatternwide.jpg" alt="x" /></a>
+                <a href="Photography.html"><img src="images/CarsonLargeWide.jpg" alt="x" /></a>
+                <a href="Textiles.html"><img src="images/Textiles_Wide.png" alt="x" /></a>
+                <a href="Archery.html"><img src="images/Archery_Wide.jpg" alt="x" /></a>
+                <a href="Three_Ps.html"><img src="images/PoeticCrop.jpg" alt="x" /></a>
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="nivo-slider/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider({
+        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+        slices: 15, // For slice animations
+        boxCols: 8, // For box animations
+        boxRows: 5, // For box animations
+        animSpeed: 500, // Slide transition speed
+        pauseTime: 5000, // How long each slide will show
+        startSlide: 0, // Set starting Slide (0 index)
+        directionNav: true, // Next & Prev navigation
+        directionNavHide: true, // Only show on hover
+        controlNav: true, // 1,2,3... navigation
+        controlNavThumbs: false, // Use thumbnails for Control Nav
+        controlNavThumbsFromRel: false, // Use image rel for thumbs
+        controlNavThumbsSearch: '.jpg', // Replace this with...
+        controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
+        keyboardNav: true, // Use left & right arrows
+        pauseOnHover: true, // Stop animation while hovering
+        manualAdvance: false, // Force manual transitions
+        captionOpacity: 0.8, // Universal caption opacity
+        prevText: 'Prev', // Prev directionNav text
+        nextText: 'Next', // Next directionNav text
+        randomStart: false, // Start on a random slide
+        beforeChange: function(){}, // Triggers before a slide transition
+        afterChange: function(){}, // Triggers after a slide transition
+        slideshowEnd: function(){}, // Triggers after all slides have been shown
+        lastSlide: function(){}, // Triggers when last slide is shown
+        afterLoad: function(){} // Triggers when slider has loaded
+    });
+});
+</script>
+  	<section id='content'>
+  		<p>
+  		Hello! My name is Libby Herskovitz, and this is my portfolio. Come on in, 
+  		take a look around, and feel free to send me a message if you have any
+  		questions or just wanna say hi. Hope you enjoy the view!
+  		</p>
+  	</section>
+  	<div id='footer-wrapper'>
+  		<footer id='site-footer'>
+  			<nav id='footer-nav'>
+  				<ul>
+  					<li>©2012 Libby Herskovitz</li>
+  					<li><a href="#">Email Me</a></li>
+  				  	<li><a href="#">Resume</a></li>
+  				  	<li><a href="x">Ring Me</a></li>
+  				</ul>
+  			</nav>
+  		</footer>
+  	</div>
+  </body>
+ </html> 
