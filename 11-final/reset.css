@@ -144,6 +144,7 @@ header.site-header {
 		margin-left:auto;
 		height:200px;
 		padding-bottom:15px;
+		z-index:-3;
 		
 		}
 header.site-header a {
@@ -436,6 +437,7 @@ section#content {
 		margin-left:auto;
 		width:50%;
 		display:block;
+		z-index:2000;
 		
 		}
 
@@ -479,9 +481,18 @@ section#content img {
 		padding-bottom:15px;
 		
 		}
+section#content img#icon{
+		width:50px;
+		padding-left:10px;
+		
+		}
 
 section#content img#me {
-		width:50%;
+		width:40%;
+		margin:0 auto;
+		float:left;
+		padding-right:10px;
+		z-index:2000;
 		
 		}
 
@@ -489,29 +500,32 @@ section#content img#me {
 		clear:both;
 		width:100%;
 		padding-top:40px;
+		padding-bottom:40px;
 		
 		}
 
 footer#site-footer {
-		width:45%;
+		width:29%;
 		margin-right:auto;
 		margin-left:auto;
 		}
 
 footer nav#footer-nav {
-		display:inline-block;
-		margin-right:auto;
-		margin-left:auto;
+		margin:0 auto;
 		
 		}
 		
 footer#footer-nav ul {
-		display:inline-block;
+		margin-right:auto;
+		margin-left:auto;
 		text-align:center;
+		
 		
 		}
 		
 footer#site-footer nav li {
+		margin-right:auto;
+		margin-left:auto;
 		font-size:.8em;
 		font-family: 'QuicksandBold', Arial, sans-serif;
 		display:inline-block;
