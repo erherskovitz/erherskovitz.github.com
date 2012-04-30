@@ -207,20 +207,26 @@ span nav#secondary-sidebar-nav ul li a{
 		font-family: 'QuicksandBoldOblique', Arial, sans-serif;
 		
 		}
+span nav#secondary-sidebar-nav ul li a:hover{
+		font-family: 'QuicksandBold', Arial, sans-serif;
+		color:#00bb66;
+		
+		}
+		
 #slider .nivo-controlNav {
 	position:absolute;
 	bottom:-40px; /* Put the nav below the slider */
 }
 #slider .nivo-controlNav img {
 	display:inline; /* Unhide the thumbnails */
-	position:relative;
+	position:absolute;
 	margin-right:10px;
 }
 
 .nivoSlider {
 	margin:0 auto;
-	left:60px;
-    position:relative;
+	left:30px;
+    position:absolute;
     width:618px; /* Change this to your images width */
     height:246px; /* Change this to your images height */
     background:url(images/loading.gif) no-repeat 50% 50%;
@@ -511,10 +517,15 @@ footer#site-footer nav li {
 		display:inline-block;
 		padding-right:3%;
 		
-		
 		}
 
 footer#site-footer nav li a {
 		text-decoration:none;
+		color:#ff8800;
+		
+		}
+
+footer#site-footer nav li a:hover {
+		color:#00bb66;
 		
 		}
