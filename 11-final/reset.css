@@ -307,7 +307,7 @@ span nav#secondary-sidebar-nav ul li a:hover{
 	width: 150px;
 	height: 150px;
 	position: relative;
-	padding: 10px;
+	padding: 1px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px 4px 4px 4px;
 }
