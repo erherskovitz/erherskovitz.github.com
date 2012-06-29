@@ -100,14 +100,13 @@ header.site-header {
 		margin-right:auto;
 		margin-left:auto;
 		height:200px;
-		padding-bottom:15px;
 		z-index:-3;
 		
 		}
 		
 header.site-header ul{
 		margin:0 auto;
-		width:50%;
+		width:43%;
 		list-style-type:none;
 		text-align:center;
 		list-style-position:outside;
@@ -311,6 +310,24 @@ section#email h2{
 		font-weight:bold;
 		
 		}
+
+div#big-image {
+		margin:0 auto;
+		width:64%;
+
+		}
+
+section#thumb {
+		margin:0 auto;
+		
+		}	
+		
+div#thumbnail-wrapper {
+		margin:0 auto;
+		width:58%;
+		padding-top:15px;
+
+		}	
 		
 #footer-wrapper {
 		clear:both;
@@ -321,7 +338,7 @@ section#email h2{
 		}
 
 footer#site-footer {
-		width:60%;
+		width:50%;
 		margin-right:auto;
 		margin-left:auto;
 		}
