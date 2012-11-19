@@ -5,7 +5,12 @@
   	<meta charset="UTF-8">
   	<title>Records Painting</title>
   	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
-  	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css' s>
+  	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'/>
+	 <style>
+	 /* This rule is read by Galleria to define the gallery height: */
+            #galleria{height:320px;}
+    </style>
+	 
 	 <!-- load jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 
@@ -29,19 +34,6 @@
   	 	</header>
   	  </div>
   <div id="galleria"></div>
-  <script>
-
-    // Load the classic theme
-    Galleria.loadTheme('../../themes/classic/galleria.classic.min.js');
-
-    // Initialize Galleria
-    Galleria.run('#galleria', {
-        flickr: 'search:cityscape',
-        flickrOptions: {
-            sort: 'interestingness-desc'
-        }
-    });
-    </script>
 	<div id="big-image">
   	  <img id="big" src="images/HPIM0648.JPG" alt="main"/>
   	</div>  	
@@ -55,7 +47,7 @@
   		   <a href="pictures5.html"><img id="thumbnail" src="images/HPIM1325b_2.jpg" alt="x"/></a>
   		   <a href="pictures6.html"><img id="thumbnail" src="images/HPIM1326b_2.jpg" alt="x"/></a>
   		   <a href="pictures7.html"><img id="thumbnail" src="images/HPIM1332b_2.jpg" alt="x"/></a>
-  		 </article>
+  		</article>
   	  </div> 
   	</section>
   	<div id='footer-wrapper'>
@@ -71,5 +63,18 @@
   		</footer>
   	</div>
   	</div>
+  	<script>
+
+    // Load the classic theme
+    Galleria.loadTheme('../../themes/classic/galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria', {
+        flickr: 'search:cityscape',
+        flickrOptions: {
+            sort: 'interestingness-desc'
+        }
+    });
+    </script>
   </body>
   
