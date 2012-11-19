@@ -5,7 +5,15 @@
   	<meta charset="UTF-8">
   	<title>Records Painting</title>
   	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
-  	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css' s>
+	 <!-- load jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+        <!-- load Galleria -->
+        <script src="../../galleria-1.2.8.min.js"></script>
+
+        <!-- load flickr plugin -->
+        <script src="galleria.flickr.min.js"></script>
 
   </head>
   
@@ -20,9 +28,24 @@
   	 	 </ul>
   	 	</header>
   	  </div>
+  <div id="galleria"></div>
+  <script>
+
+    // Load the classic theme
+    Galleria.loadTheme('../../themes/classic/galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria', {
+        flickr: 'search:cityscape',
+        flickrOptions: {
+            sort: 'interestingness-desc'
+        }
+    });
+    </script>
 	<div id="big-image">
   	  <img id="big" src="images/HPIM0648.JPG" alt="main"/>
   	</div>  	
+   
 	<section id="thumb">
 	  <div id='thumbnail-wrapper'>
   		<article id="paint">
