@@ -192,6 +192,7 @@ header.site-header a img {
     position: relative;
     overflow: hidden;
     background: #000;
+    
 }
 .galleria-container img {
     -moz-user-select: none;
