@@ -139,6 +139,7 @@ header.site-header { height:80px; }
 
 
 header.site-header {
+		position:relative;
 		width:25%;
 		margin-right:auto;
 		margin-left:auto;
