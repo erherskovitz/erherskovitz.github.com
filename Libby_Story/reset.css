@@ -91,7 +91,9 @@ body {
   		position: relative;
 }
 #home article {
-		font-family: Helvetica;
+		font-family: Adelle-Bold;
+		color:orange;
+		font-size:3em;
   		height: 458px;
   		position: absolute;
   		text-align: center;
@@ -110,6 +112,9 @@ body {
   		box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 #about article {
+		font-family: Adelle-Bold;
+		color:orange;
+		font-size:3em;
   		height: 458px;
   		position: absolute;
   		text-align: center;
