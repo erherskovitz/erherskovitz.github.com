@@ -1,0 +1,750 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:1000px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+@font-face {
+    font-family: 'JosefinSansStdLight';
+    src: url('fonts/JosefinSansStd-Light-webfont.eot');
+    src: url('fonts/JosefinSansStd-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSansStd-Light-webfont.woff') format('woff'),
+         url('fonts/JosefinSansStd-Light-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSansStd-Light-webfont.svg#JosefinSansStdLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabThin';
+    src: url('fonts/JosefinSlab-Thin-webfont.eot');
+    src: url('fonts/JosefinSlab-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-Thin-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-Thin-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-Thin-webfont.svg#JosefinSlabThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabThinItalic';
+    src: url('fonts/JosefinSlab-ThinItalic-webfont.eot');
+    src: url('fonts/JosefinSlab-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-ThinItalic-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-ThinItalic-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-ThinItalic-webfont.svg#JosefinSlabThinItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabLight';
+    src: url('fonts/JosefinSlab-Light-webfont.eot');
+    src: url('fonts/JosefinSlab-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-Light-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-Light-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-Light-webfont.svg#JosefinSlabLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabLightItalic';
+    src: url('fonts/JosefinSlab-LightItalic-webfont.eot');
+    src: url('fonts/JosefinSlab-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-LightItalic-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-LightItalic-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-LightItalic-webfont.svg#JosefinSlabLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabRegular';
+    src: url('fonts/JosefinSlab-Regular-webfont.eot');
+    src: url('fonts/JosefinSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-Regular-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-Regular-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-Regular-webfont.svg#JosefinSlabRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabItalic';
+    src: url('fonts/JosefinSlab-Italic-webfont.eot');
+    src: url('fonts/JosefinSlab-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-Italic-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-Italic-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-Italic-webfont.svg#JosefinSlabItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabSemiBold';
+    src: url('fonts/JosefinSlab-SemiBold-webfont.eot');
+    src: url('fonts/JosefinSlab-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-SemiBold-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-SemiBold-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-SemiBold-webfont.svg#JosefinSlabSemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabSemiBoldItalic';
+    src: url('fonts/JosefinSlab-SemiBoldItalic-webfont.eot');
+    src: url('fonts/JosefinSlab-SemiBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-SemiBoldItalic-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-SemiBoldItalic-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-SemiBoldItalic-webfont.svg#JosefinSlabSemiBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabBold';
+    src: url('fonts/JosefinSlab-Bold-webfont.eot');
+    src: url('fonts/JosefinSlab-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-Bold-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-Bold-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-Bold-webfont.svg#JosefinSlabBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabBoldItalic';
+    src: url('fonts/JosefinSlab-BoldItalic-webfont.eot');
+    src: url('fonts/JosefinSlab-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-BoldItalic-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-BoldItalic-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-BoldItalic-webfont.svg#JosefinSlabBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+		
+
+body {
+	width  : 100%;
+	height : 100%;
+}
+
+body {
+	margin      : 0px;
+	min-width   : 1080px;
+	padding     : 0px;
+	font-family : 'JosefinSlabSemiBold', slab-serif;
+	overflow-x  : hidden;
+}
+
+#content {
+	position : fixed;
+	top      : 0px;
+	left     : 0px;
+	width    : 100%;
+	height   : 100%;
+}
+
+a { 
+	color           : #6C6;
+	text-decoration : none;
+}
+
+a:hover {
+	text-decoration : underline;
+}
+
+p {
+	margin      : 0 0 20px 0;
+	font-size   : 17px;
+	line-height : 24px;
+}
+
+p, ul {
+	font-family      : 'JosefinSlabSemiBold', slab-serif;
+	font-size		 : 1.4em;
+	font-style       : normal;
+	list-style       : none;
+}
+
+#header ul li {
+	width      : 325px;
+	height     : 50px;
+	float      : left;
+	text-align : center;
+}
+
+#header ul {
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+h1 {
+	font-family      : 'JosefinSlabBold', serif;
+	text-shadow: 2px 2px -48px #666;
+	font-weight      : bold;
+	font-style       : normal;
+}
+
+h2 {
+	font-family : 'JosefinSlabSemiBold', serif;
+	font-size   : 30px; 
+	font-weight : bold;
+	line-height : 80px;
+}
+
+
+h3 {
+	font-family : 'JosefinSlabSemiBold', serif;
+	font-size   : 16px;
+	font-weight : bold;
+	margin      : 1em 0;
+}
+
+h3.caseStudy {
+	cursor : pointer;
+}
+
+.video {
+	overflow : hidden;
+}
+
+
+section {
+	min-height : 500px;
+	min-height : 100%;
+	width      : 100%;
+	position   : absolute;
+	overflow   : hidden;
+	visibility : hidden;
+}
+
+section .story {
+	position      : relative;
+	z-index       : 1;
+	width         : 60%;
+	padding-right : 30%;
+	margin        : 40px auto 0 auto;
+}
+
+div.caption {
+	padding-bottom : 30px;
+	font-size      : 13px;
+}
+
+/* default section show / hide animations */
+section.start {
+	top : 100%;
+}
+
+section.focus, section.to {
+	bottom : 0%;
+}
+
+section.end {
+	bottom : 100%;
+}
+
+/* default background image animation */
+
+section .bg {
+	position : absolute;
+	left     : 0px;
+	top      : 0%;
+}
+
+section .bg.start {
+	top : -50%;
+}
+
+section .bg, section .bg.focus, section .bg.to {
+	top : 0%;
+}
+
+section .bg.end {
+	top : 50%;
+}
+
+/* Side Nav */
+ul#nav {
+	position : fixed;
+	left     : 5%;
+	top      : 20%;
+	z-index  : 999;
+}
+
+ul#nav li {
+	height   : 20px;
+	position : relative;
+}
+
+ul#nav a {
+	display     : block;
+	width       : 20px;
+	height      : 20px;
+	background  : url('../images/grey-dot.png') 0 100% no-repeat;
+	text-indent : -9000px;
+	overflow    : hidden;
+	outline     : none;
+}
+
+ul#nav a:hover, nav#main li.active a {
+	background : url('../images/grey-pink-dot.png') 0 100% no-repeat;
+}
+
+ul#nav h1 {
+	display     : none;
+	opacity     : 0;
+	position    : absolute;
+	left        : 15px;
+	top         : 0px;
+	white-space : nowrap;
+	padding     : 0 0 0 18px;
+	background  : url('../images/menu-arrow.png') 0 50% no-repeat;
+	overflow    : hidden;
+	margin      : 0;
+	font-size   : 16px;
+}
+
+ul#nav span {
+	display            : block;
+	background         : url('../images/menu-bg.png') repeat-x;
+	color              : #FFF;
+	padding            : 4px 8px;
+	white-space        : nowrap;
+	-moz-border-radius : 10px;
+	border-radius      : 10px;
+}
+
+#fancybox-left #fancybox-left-ico {
+	left : -40px;
+}
+
+#fancybox-right #fancybox-right-ico {
+	left  : auto;
+	right : -40px;
+}
+
+.video-js-box.vjs-fullscreen {
+	height : auto !important;
+}
+/***************
+ * Intro Panel *
+ ***************/
+#story-header {
+	position:relative;
+	
+}
+
+#story-header h1 {
+	
+}
+
+#story-header h2 {
+	position:absolute;
+	top:100px;
+	z-index:2;
+	text-align:center;
+	margin:0 auto;
+	font-family: 'JosefinSlabSemiBold', serif;
+	font-weight: 700;
+	font-size:70px;
+}
+
+#story-header .story {
+	padding-right : 0px;
+	top:150px;
+}
+
+
+#story-header p {
+	font-family: 'JosefinSansStdLight';
+	font-weight:bold;
+	
+	position:relative;
+	top:60px;
+	z-index:3;
+	text-align: center;
+	margin: 0 auto;
+	font-size : 30px;
+}
+
+#story-header ul li {
+	font-size : 16px;
+	margin    : 16px 0;
+}
+
+#story-header ul {
+	padding : 0px;
+}
+
+/***************
+ * Intel Panel *
+ ***************/
+#story-intel {
+	color      : #FFF;
+	background : #022639;
+}
+
+/*********************
+ * Ultrabook Project *
+ *********************/
+#story-william {
+	color      : #CCC;
+	background : #000;
+}
+
+#story-william .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-partone {
+	color      : white;
+	background : #000;
+	
+}
+
+#story-partone p{
+	top:600px;
+	position:relative;
+	left:320px;
+	
+}
+
+#story-partone .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-parttwo {
+	color      : white;
+	background : #000;
+}
+
+#story-parttwo .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-partthree {
+	color      : white;
+	background : #000;
+}
+
+#story-partthree .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-partfour {
+	color      : white;
+	background : #000;
+}
+
+#story-partfour .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-partfive {
+	color      : white;
+	background : #000;
+}
+
+#story-partfive .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-partsix {
+	color      : white;
+	background : #000;
+}
+
+#story-partsix .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-partseven {
+	color      : white;
+	background : #000;
+}
+
+#story-partseven .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-parteight {
+	color      : white;
+	background : #000;
+}
+
+#story-parteight .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-partnine {
+	color      : white;
+	background : #000;
+}
+
+#story-partnine .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-partten {
+	color      : white;
+	background : #000;
+}
+
+#story-partten .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-parteleven {
+	color      : white;
+	background : #000;
+}
+
+#story-parteleven .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-parttwelve {
+	color      : white;
+	background : #000;
+}
+
+#story-parttwelve .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-partthirteen {
+	color      : white;
+	background : #000;
+}
+
+#story-partthirteen .bg {
+	left  : auto;
+	right : 0px;
+}
+
+#story-partfourteen {
+	color      : white;
+	background : #000;
+}
+
+#story-partfourteen .bg {
+	left  : auto;
+	right : 0px;
+}
+
+
+/**************
+ * Bing Panel *
+ **************/
+#story-bing {
+	color       : #FFF;
+	text-shadow : 1px 1px 1px #000;
+	background  : #C9BC33;
+}
+
+#story-bing .logo {
+	position : absolute;
+	right    : 20%;
+	bottom   : 50%;
+}
+
+#story-bing .logo.start {
+	bottom : 190%;
+}
+
+#story-bing .logo.end {
+	bottom : -90%;
+}
+
+/**************
+ * Nike Panel *
+ **************/
+#story-nike {
+	color      : #CCC;
+	background : #000;
+}
+
+#story-nike .logo {
+	position : absolute;
+	right    : 0%;
+	bottom   : 30%;
+}
+
+#story-nike .logo.start {
+	bottom : 170%;
+}
+
+#story-nike .logo.end {
+	bottom : -210%;
+}
+
+#story-nike .box {
+	background    : #000;
+	opacity       : .7;
+	border-radius : 10px;
+	position      : absolute;
+	top           : -10px;
+	right         : 440px;
+	bottom        : -10px;
+	left          : -10px;
+	z-index       : -1;
+}
+
+#story-nike ul.slide {
+	display     : block;
+	position    : absolute;
+	white-space : nowrap;
+	left        : -1426px;
+}
+
+#story-nike ul.slide.start {
+	left : -1425px;
+}
+
+#story-nike ul.slide li {
+	display : inline;
+}
+
+#story-nike ul.slide-1.start { opacity : 0; }
+#story-nike ul.slide-2.start { opacity : 0; }
+#story-nike ul.slide-3.start { opacity : 0; }
+
+#story-nike ul.slide-1 {
+	bottom : 0px;
+}
+
+#story-nike ul.slide-2, #story-nike ul.slide-2.to {
+	bottom : 176px;
+	left   : -1425px;
+}
+
+#story-nike ul.slide-2.start {
+	left : -1426px;
+}
+
+#story-nike ul.slide-3 {
+	bottom : 352px;
+}
+
+
+#story-nike ul.slide-1.to, #story-nike ul.slide-3.to {
+	left : -1425px;
+}
+
+#story-nike ul.slide-1.end {
+	right : 0px;
+	left  : auto;
+}
+
+#story-nike ul.slide-3.end {
+	right : 1200px;
+	left  : auto;
+}
+
+
+#story-nike ul.slide-2.to {
+	right : 0px;
+}
+
+#story-nike ul.slide-2.end {
+	left : 200px;
+}

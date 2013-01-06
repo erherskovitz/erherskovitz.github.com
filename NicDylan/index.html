@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>NIC + DYLAN</title>
+  	<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+  	<link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 3000,
+        speed: 800
+      });
+
+    });
+  </script>
+  </head>
+  <body>
+  	<div id='site-wrapper'>
+  	<header class="site-header">
+  		<div id="display_search">
+       	  <form action="http://www.nicdylan.com/SearchResults.asp" method="get" name="SearchBoxForm">
+            <input type="text" name="Search" id="search_input" value="search" onfocus="if (this.value == 'search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'search';}">
+			<input type="submit" name="Submit" id="search_submit" value="">
+          </form>
+    	</div>
+  		<div id="img_wrap">
+  	 		<img src="images/blacklogo.jpeg" alt="Logo"/>
+  	 	</div>
+  	</header>
+  	</div> <!-- end #site-wrapper -->
+  	
+  	 <div id='nav-wrapper'>
+  	  <nav id="top-menu">
+  	 	<ul id="shop">
+  	 		<span>
+  	 			<li><a href="#">BRANDS</a></li>
+  	 		</span>
+  	 			<li><a href="#">ACCESSOREIES</a></li>
+  	 			<li><a href="#">BAGS</a></li>
+  	 			<li><a href="#">LIFESTYLE</a></li>
+  	 	</ul>
+  	 	<ul id="blog">
+  	 		<span>
+  	 			<li><a href="#">STYLE + SCENE</a></li>
+  	 		</span>
+  	 			<li><a href="#">MIX + MATCH</a></li>
+  	 			<li><a href="#">HERE + THERE</a></li>
+  	 			<li><a href="#">PRESS</a></li>
+  	  </nav>
+  	 </div>
+  	
+  	<section id='content'>
+  		<ul class="rslides" id="slider1">
+  			<li><img src="images/alex_slider.jpg" alt="slider1"></li>
+  			<li><img src="images/basile_slider.jpg" alt="slider1"></li>
+  			<li><img src="images/evouni_2.jpg" alt="slider1"></li>
+ 			<li> <img src="images/OTRERAevileye.jpg" alt="slider1"></li>
+		</ul>
+  		<div id="blog">
+  		  <img src="images/Articles.jpeg" alt="Style+Scene"/>
+  		  <img src="images/article_noah.jpg" alt="Mix+Match"/>
+  		  <img src="images/article_tina.jpg" alt="Here+There"/>
+  		</div>
+  	</section>	
+   <footer id='site-footer'>
+     <nav id='footer-nav'>
+     <div id="eList"> 
+          <form name="MailingList" method="post" action="http://www.nicdylan.com/MailingList_subscribe.asp">  
+            <input type="text" id="elist_input" name="emailaddress" value="Sign-Up For Our Newsletters" onfocus="if (this.value == 'enter your email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'enter your email';}"> 
+            <input type="submit" name="Submit" id="elist_submit" value="Submit">
+          </form>
+        </div>
+       <ul>
+        	<li>Images and Copy From</li>
+        	<li><a href="http://commons.wikimedia.org/wiki/Main_Page">Wiki Commons</a></li>
+        <span>
+        	<li>Copyright 2011</li>
+        	<li><a href="#">Martha Rettig</a></li>
+        </span>	
+       </ul>
+     </nav>
+
+   </footer>
+  </body>
+</html>

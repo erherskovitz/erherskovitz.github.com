@@ -2,32 +2,334 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>The Story of Libby</title>
+	
 	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" charset="utf-8">
-	<script>
-	$(document).ready(function(){
-    $('section[data-type="background"]').each(function(){
-        var $bgobj = $(this); // assigning the object
-        $(window).scroll(function() {
-            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-            // Put together our final background position
-            var coords = '50% '+ yPos + 'px';
-            // Move the background
-            $bgobj.css({ backgroundPosition: coords });
-        });
-    });
-</script>
+	
+  	  				<link rel="stylesheet" href="style.css" type="text/css" media="screen"></link>
+	
+	<style type="text/css" media="screen">
+		.headline {
+			color: red;
+			font-size:104px;
+			text-align:center;
+			text-shadow: -1px -1px 1px #666;
+		}
+	
+		.headline h1 { font-size:72px;  text-transform:uppercase; margin-bottom:0px;}
+		.char7 { margin:-40px; }
+		.word1 { color: gold; 
+				bottom:57px;
+				margin:-22px;
+				position:relative;
+				font-size:68px;}
+		.char14 { color:pink;}
+		.word2  { color: #72B9CF; 
+				position:relative;
+				left:-6px;
+				top:3px;}
+		.char18 { color:pink; }
+		.word3 { position:relative;
+				color: #008FFF; 
+				left:-24px;
+				top:3px;}
+		.char11,
+		.word4 { color:#A4DAB7;
+				position:relative;
+				left:-38px;
+				top:3px; }
+		.char17 { color: indigo; }
+		.char13 { color: violet; }
+	</style>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/jquery.lettering.js"></script>
 
+<script>
+  	$(document).ready(function() {
+			$(".headline").lettering();
+			$(".headline").lettering('words');
+			$("#demo3 p").lettering('lines');
+			$("#demo4 h1").lettering('words').children("span").lettering();
+			$("#demo5 h1").lettering().children("span").css({'display':'inline-block', '-webkit-transform':'rotate(-25deg)'});
+		});
+  	</script>
+
+	<link href="Parallax/css/reset.css"  rel="stylesheet" type="text/css" />
+	<link href="Parallax/css/chrome.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="Parallax/js/side-nav.js"              ></script>
+	<script type="text/javascript" src="Parallax/js/backgrounds.js"           ></script>
+	<script type="text/javascript" src="Parallax/js/kinetics.js"              ></script>
+
+	<!-- parallax.js really screws with the DOM, so make sure it's included last so other things don't notice :) -->
+	<script type="text/javascript" src="Parallax/js/parallax.js"></script>
+
+	
+ 	
+	
 </head>
 <body>
-	<section id='content'>
-		<section id="home" data-type="background" data-speed="10" class="pages">
-         <article>CRAZY EYES</article>
-    </section>
-	<section id="about" data-type="background" data-speed="10" class="pages">
-         <article>WEIRDO MOUTH</article>
-	</section>
-	</section>
+	<div id="mock-scroller"></div>
+
+	<div id="content">
+		<section id="story-header">
+		<img class="bg animate" src="images/Paper_Texture.jpg" anim-detached="true" />
+			<div class="story">
+				<div id="headline" class="headline">
+			<h1 >the Story of Libby</h1>
+				</div>
+			</div>
+		</section>
+		<section id="story-partone">
+			<img class="bg animate" src="images/Paper_Texture.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						There was a girl, so odd and quirky. 
+						<br>
+						She had all these ideas, but her future was murky.
+						</br> 
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-parttwo">
+			<img class="bg animate" src="images/wood4.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						So she tried all different niches.
+						<br> 
+						From dog walking, to baby sitting, even making Quiches.
+						</br> 
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-partthree">
+			<img class="bg animate" src="images/wood2.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						Then she tried interior design
+						<br>
+						But the reality for her seemed slightly benign.
+						</br>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-partfour">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						On one fateful day,
+						<br>
+						Her friend Kimi would say
+						</br>
+					</p>
+					<p>
+						"I took this funny photo, but it's kinda a flop,
+						<br>
+						Why don't we try to edit it in photoshop!"
+						</br>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-partfive">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						And so the love affair begun
+						<br>
+						Libby took so many classes, at first just for fun.
+						</br> 
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-partsix">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						"High school is ending soon, you know"
+						<br>
+						Her father said, with an anticipated glow
+						</br>
+					</p>
+					<p>
+						"What ever shall you do with your future and career?"
+						<br>
+						"How about art school," she said with some fear.
+						</br> 
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-partseven">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						Her parents, to her surprise,
+						<br>
+						Were completely behind her, they gave her high fives.
+						</br>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-parteight">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						So the search to find the perfect school
+						<br>
+						Maybe RISD or pratt, but she wasn't a fool.
+						</br>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-partnine">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						The tour of MassArt sealed the deal
+						<br>
+						No where else would be any better, she could feel.
+						</br>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-partten">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						So she worked as hard as she could and applied
+						<br>
+						Then the acceptance came in the mail, she nearly cried.
+						</br> 
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-parteleven">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						Off she went to fulfill her dream,
+						<br> 
+						Where she found school might not be all it would seem.
+						</br>
+						Hard work and long days, exhaustion ensued.
+						<br>
+						Libby and her work would sometimes feud.
+						</br> 
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-parttwelve">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						Then she decided to take a class like one she had done before...
+						<br>
+						Web design, she found, would be something that she would adore.
+						</br>
+						So her love for design and art returned.
+						<br> 
+						Her creativity once again burned.
+						</br> 
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-partthirteen">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						So here we are, with Libby all aglow
+						<br>
+						Feel free to message her if there is anything you wish to know!
+						</br>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-partfourteen">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<p>
+						Hope you enjoyed this tale,
+						<br>
+						But there shall be more to come, without fail.
+						</br> 
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="story-bing">
+			<img class="bg animate" src="images/bing-bg-01.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<h2>Background parallax</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula aliquam eros a tempus. Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Quisque et urna lacus, quis aliquam purus. Nulla semper arcu vel diam auctor condimentum. Nam molestie sem eu quam fermentum a tempus nisi aliquet. Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce nec ipsum ac mauris imperdiet luctus sed vitae ligula. Phasellus nec hendrerit neque.
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="story-nike" data-nav="Nike">
+			<ul class="slide slide-1 animate" anim-detached="true">
+				<li><img src="images/nike/thumb-0.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-1.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-2.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-3.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-4.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-5.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-6.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-7.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-8.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-0.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-1.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-2.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-3.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-4.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-5.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-6.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-7.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-8.jpg" width="317" height="176"></li>
+			</ul>
+			<ul class="slide slide-2 animate" anim-detached="true">
+				<li><img src="images/nike/thumb-9.jpg"  width="317" height="176"></li><li><img src="images/nike/thumb-10.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-11.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-12.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-13.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-14.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-15.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-16.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-17.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-9.jpg"  width="317" height="176"></li><li><img src="images/nike/thumb-10.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-11.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-12.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-13.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-14.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-15.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-16.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-17.jpg" width="317" height="176"></li>
+			</ul>
+			<ul class="slide slide-3 animate" anim-detached="true">
+				<li><img src="images/nike/thumb-18.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-19.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-20.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-21.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-22.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-23.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-24.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-25.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-26.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-18.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-19.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-20.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-21.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-22.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-23.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-24.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-25.jpg" width="317" height="176"></li><li><img src="images/nike/thumb-26.jpg" width="317" height="176"></li>
+			</ul>
+
+			<div class="story">
+				<div class="box"></div>
+				<img class="logo animate" src="images/nike-logo.png" anim-detached="true" width="316" height="80" />
+				<div>
+					<h2>Page done for nike</h2>
+					<h3>Some parallax</h3>
+					<p>
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="story-foo" anim-pause="500">
+			<div class="story">
+				<h2>Misc. Stuff</h2>
+				<p>Some more parallax stuff.</p>
+			</div>
+		</section>
+	</div>
 
 </body>
 </html>
