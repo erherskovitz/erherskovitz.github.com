@@ -142,7 +142,6 @@ nav#top-menu {
 		
 #top-menu ul {
 		margin:0 auto;
-		list-style-image: url('images/line.png');
 		text-align:center;
 		list-style-position:outside;
 		height:50px;
@@ -168,6 +167,7 @@ nav#top-menu {
 #top-menu ul#shop{
 		width:45%;
 		float:left;
+		margin-left:5%;
 		
 		}
 
@@ -177,12 +177,18 @@ nav#top-menu {
 		
 		}
 		
-#top-menu li {	
-				line-height:.4em;	
+#top-menu li {		
 		float:left;
-		margin-left:20px; 
-		margin-right:20px; 
+		margin-left:15px; 
+		margin-right:15px; 
 		padding:13px;
+		
+		}
+
+#top-menu li#line {		
+		float:left;
+		margin-left:1px; 
+		margin-right:1px; 
 		
 		}
 @media screen and (max-width:500px) {
@@ -200,7 +206,6 @@ nav#top-menu {
 
 
 #top-menu li a { 
-		line-height:.4em;
 		font-size:.6em;
 		font-family: 'Armata', sans-serif;
 		text-align:center; 
