@@ -142,8 +142,7 @@ nav#top-menu {
 		
 #top-menu ul {
 		margin:0 auto;
-		width:100%;
-		list-style-type:square;
+		list-style-image: url('images/line.png');
 		text-align:center;
 		list-style-position:outside;
 		height:50px;
@@ -160,7 +159,7 @@ nav#top-menu {
  #top-menu ul { font-size:.8em; }
  }
 
-#top-menu ul span {
+#top-menu ul li span {
 		list-style-type:none;
 		margin:0 auto;
 		
@@ -178,7 +177,8 @@ nav#top-menu {
 		
 		}
 		
-#top-menu li {		
+#top-menu li {	
+				line-height:.4em;	
 		float:left;
 		margin-left:20px; 
 		margin-right:20px; 
@@ -200,6 +200,7 @@ nav#top-menu {
 
 
 #top-menu li a { 
+		line-height:.4em;
 		font-size:.6em;
 		font-family: 'Armata', sans-serif;
 		text-align:center; 
@@ -251,7 +252,7 @@ section#content {
 
 		
 section#content img {
-		width:90%; 
+		width:96%; 
 		margin:20px;
 		float:left;
 		}
