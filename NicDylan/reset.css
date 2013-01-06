@@ -138,6 +138,7 @@ nav#top-menu {
 		border-top:2px solid black;
 		border-bottom:4px solid black;
 		
+		
 		}
 		
 #top-menu ul {
@@ -174,6 +175,7 @@ nav#top-menu {
 #top-menu ul#blog{
 		width:45%;
 		float:right;
+		margin-right:-6%;
 		
 		}
 		
@@ -185,7 +187,17 @@ nav#top-menu {
 		
 		}
 
-#top-menu li#line {		
+#top-menu ul#blog li {		
+		float:left;
+		margin-left:5px; 
+		margin-right:5px; 
+		padding:13px;
+		
+		}
+
+
+#top-menu li#line {	
+		vertical-align:bottom;	
 		float:left;
 		margin-left:1px; 
 		margin-right:1px; 
