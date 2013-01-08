@@ -136,7 +136,7 @@ header.site-header ul li {
  header.site-header ul li { font-size:.8em; }
 }
 @media screen and (min-width:300px) {
- header.site-header ul li { font-size:.6em;}
+ header.site-header ul li { font-size:.4em;}
  }
 
 		
@@ -215,9 +215,10 @@ img {
 		position: absolute;
 		right: 117px;
 		width: 21%;
-		top: 90px;
+		top: 88px;
 		font-size: .6em;
 		font-family: 'Armata', sans-serif;
+		line-height:1.5em;
 		
 		}
 
@@ -651,6 +652,10 @@ footer#site-footer {
 		
 		}
 
+@media screen and (min-width:300px) {
+ #eList { left:30px; }
+ }	
+
 #eList form {
 		margin: 0;
 		padding: 0;
@@ -710,8 +715,11 @@ footer#footer-nav {
 		margin-left:60px;
 		float:left;
 		width:20%;
-		
-}
+		}
+
+@media screen and (min-width:300px) {
+ #Copyright { margin-left:20px; }
+ }
 
 #Copyright li {
 		font-size:.8em;
