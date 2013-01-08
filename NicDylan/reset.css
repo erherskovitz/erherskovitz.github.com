@@ -487,7 +487,23 @@ ul#shop li ul{
 		display:none;
 		
 		}
+		
 
+
+  @media screen and (max-width:500px) {
+ul#shop li ul { z-index:-1;}
+ }
+		
+@media screen and (max-width:500px) {
+ul#shop li:hover ul { display:none;}
+ }
+@media screen and (max-width:500px) {
+ul#shop li:hover li { display:none;}
+ }
+ @media screen and (max-width:500px) {
+ul#shop li:hover li a { display:none;}
+ }
+ 
 ul#shop li:hover ul {
 		background-color:none;
 		display:block;
