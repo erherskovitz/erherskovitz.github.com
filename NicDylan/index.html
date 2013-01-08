@@ -26,11 +26,19 @@
   <body>
   	<div id='site-wrapper'>
   	<header class="site-header">
+  		<ul>
+  			<li><a href="#">ACCOUNT</a></li>
+  			<li>|</li>
+  			<li><a href="#">CART (0)</a></li>
+  		</ul>
   		<div id="display_search">
        	  <form action="http://www.nicdylan.com/SearchResults.asp" method="get" name="SearchBoxForm">
             <input type="text" name="Search" id="search_input" value="search" onfocus="if (this.value == 'search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'search';}">
 			<input type="submit" name="Submit" id="search_submit" value="">
           </form>
+    	</div>
+    	<div id="shipping">
+    		<p>Free Shipping on All U.S. Orders & Internationals Orders Over $50</p>
     	</div>
   		<div id="img_wrap">
   	 		<img src="images/blacklogo.jpeg" alt="Logo"/>
@@ -41,13 +49,48 @@
   	 <div id='nav-wrapper'>
   	  <nav id="top-menu">
   	 	<ul id="shop">
-  	 			<li><a href="#">BRANDS</a></li>
+  	 			<li><a href="#">BRANDS</a>
+  	 				<ul>
+  	 					<li><a href="#">BASILE & PAPE</a></li>
+  	 					<li><a href="#">ALEXANDRA SATINE</a></li>
+  	 					<li><a href="#">BOYNYC</a></li>
+  	 					<li><a href="#">BIKE</a></li>
+  	 					<li><a href="#">CAMILLA JAMES</a></li>
+  	 					<li><a href="#">CLAUDIA ROWE</a></li>
+  	 					<li><a href="#">DANIELA ZAGNOLLI</a></li>
+  	 					<li><a href="#">EVOUNI</a></li>
+  	 					<li><a href="#">LIFE + STYLE</a></li>
+  	 					<li><a href="#">L.O.V. Project</a></li>
+  	 					<li><a href="#">0R0POPO</a></li>
+  	 					<li><a href="#">OTRERA</a></li>
+  	 					<li><a href="#">SOPHIE BLAKE</a></li>
+  	 					<li><a href="#">TEMERITY</a></li>
+  	 				</ul>
+  	 			</li>
   	 			<li id="line">|</li>
-  	 			<li><a href="#">ACCESSORIES</a></li>
+  	 			<li><a href="#">ACCESSORIES</a>
+  	 				<ul>
+  	 					<li><a href="#">BANGLES</a></li>
+  	 					<li><a href="#">BRACELETS</a></li>
+  	 					<li><a href="#">COLLARS</a></li>
+  	 					<li><a href="#">CUFFS</a></li>
+  	 					<li><a href="#">EARRINGS</a></li>
+  	 					<li><a href="#">NECKLACES</a></li>
+  	 					<li><a href="#">RINGS</a></li>
+  	 					<li><a href="#">SCARVES</a></li>
+  	 				</ul>
+  	 			</li>
   	 			<li id="line">|</li>
   	 			<li><a href="#">BAGS</a></li>
   	 			<li id="line">|</li>
-  	 			<li><a href="#">LIFESTYLE</a></li>
+  	 			<li><a href="#">LIFESTYLE</a>
+  	 				<ul>
+  	 					<li><a href="#">JOURNALS</a></li>
+  	 					<li><a href="#">iPAD ACCESSORIES</a></li>
+  	 					<li><a href="#">PHONE ACCESSORIES</a></li>
+  	 					<li><a href="#">LAPTOP ACCESSORIES</a></li>
+  	 				</ul>
+  	 			</li>
   	 	</ul>
   	 	<ul id="blog">
   	 			<li><a href="#">STYLE + SCENE</a></li>
@@ -74,22 +117,43 @@
   		</div>
   	</section>	
    <footer id='site-footer'>
-     <nav id='footer-nav'>
      <div id="eList"> 
           <form name="MailingList" method="post" action="http://www.nicdylan.com/MailingList_subscribe.asp">  
             <input type="text" id="elist_input" name="emailaddress" value="Sign-Up For Our Newsletters" onfocus="if (this.value == 'enter your email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'enter your email';}"> 
             <input type="submit" name="Submit" id="elist_submit" value="Submit">
           </form>
-        </div>
+    </div>
+    <div id='Copyright'>  
        <ul>
-        	<li>Images and Copy From</li>
-        	<li><a href="http://commons.wikimedia.org/wiki/Main_Page">Wiki Commons</a></li>
-        <span>
-        	<li>Copyright 2011</li>
-        	<li><a href="#">Martha Rettig</a></li>
-        </span>	
-       </ul>
-     </nav>
+        	<li><a href="#">Copyright 2013 NIC AND DYLAN, INC.. All Rights Reserved.</a></li>
+        	<li>Shopping Cart Powered by <a href="#">Volusion</a>.</li>
+        </ul>
+     </div>
+     <div id='my-account'>  
+       <ul>
+        	<li>MY ACCOUNT</li>
+        	<li><a href="#">Login/Register</a></li>
+        	<li><a href="#">Shopping Cart</a></li>
+        	<li><a href="#">Order Status</a></li>
+        </ul>
+     </div>
+     
+     <div id='customer-service'>  
+       <ul>
+        	<li>CUSTOMER SERVICE</li>
+        	<li><a href="#">Help</a></li>
+        	<li><a href="#">Returns & Exchanges</a></li>
+        </ul>
+     </div>
+     
+      <div id='nic-dylan'>  
+       <ul>
+        	<li>NIC + DYLAN</li>
+        	<li><a href="#">About Us</a></li>
+        	<li><a href="#">Contact Us</a></li>
+        	<li><a href="#">Privacy Policy</a></li>
+        </ul>
+     </div>
 
    </footer>
   </body>
