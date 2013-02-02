@@ -103,11 +103,9 @@ sub {
 }
 
 img {
-  display:block;
-  margin:0 auto;
   width: auto\9;
   height: auto;
-  max-width: 70%;
+  max-width: 100%;
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -371,6 +369,226 @@ a:hover {
   width: 220px;
 }
 
+#pizza { 
+  position:relative;
+  height:200px;
+}
+
+#crust { 
+	-webkit-transform:matrix(2.4, 0, 0, 1, 0, 0);
+      -o-transform: matrix(2.4, 0, 0, 1, 0, 0);
+         transform: matrix(2.4, 0, 0, 1, 0, 0);
+  position:absolute;
+  background-color:tan;
+  width:100px;
+  height:100px;
+  border-radius:100px;
+  top:40%;
+  left:20%;
+  
+}
+
+#sauce {
+  position:absolute;
+  background-color:red;
+  width:90px;
+  height:86px;
+  border-radius:90px;
+  left:5px;
+  top:5px;
+
+}
+
+#cheese1 {
+	position:absolute;
+	background-color:white;
+	width:49px;
+	height:41px;
+	border-radius:72px;
+	left:12px;
+	top:21px;
+}
+
+#cheese2 {
+	position:absolute;
+	background-color:white;
+	width:30px;
+	height:30px;
+	border-radius:30px;
+	left:40px;
+	top:14px;
+}
+
+#cheese3 {
+	position:absolute;
+	background-color:white;
+	width:40px;
+	height:41px;
+	border-radius:52px;
+	left:48px;
+	top:21px;
+}
+
+#cheese4 {
+	position:absolute;
+	background-color:white;
+	width:40px;
+	height:30px;
+	border-radius:40px;
+	left:30px;
+	top:25px;
+}
+
+#cheese5 {
+	position:absolute;
+	background-color:white;
+	width:40px;
+	height:30px;
+	border-radius:40px;
+	left:10px;
+	top:40px;
+}
+#cheese6 {
+	position:absolute;
+	background-color:white;
+	width:40px;
+	height:30px;
+	border-radius:40px;
+	left:50px;
+	top:40px;
+}
+#cheese7 {
+	position:absolute;
+	background-color:white;
+	width:40px;
+	height:30px;
+	border-radius:40px;
+	left:30px;
+	top:50px;
+}
+#cheese8 {
+	position:absolute;
+	background-color:white;
+	width:30px;
+	height:25px;
+	border-radius:40px;
+	left:25px;
+	top:12px;
+}
+#leaf {
+	position:absolute;
+	background-color:green;
+	width: 15px;
+	height: 15px;
+	left: 45px;
+	top: 29px;
+	border-radius: 38px 6px 30px 3px;
+}
+
+#stool { 
+  position:relative;
+  height:250px;
+  left:60px;
+}
+
+#leg1 {
+	-webkit-transform:rotate();
+  position:absolute;
+  background-color:darkslategrey;
+  width:8px;
+  height:200px;
+  border-radius:90px;
+  left:120px;
+  top:30px;
+}
+
+#leg4 {
+	-webkit-transform:rotate();
+  position:absolute;
+  background-color:darkslategrey;
+  width:8px;
+  height:210px;
+  border-radius:90px;
+  left:-10px;
+  top:30px;
+}
+
+#round {
+	-webkit-transform:matrix(2.6, 0, 0, .8, 0, 0);
+      -o-transform: matrix(2.6, 0, 0, .8, 0, 0);
+         transform: matrix(2.6, 0, 0, .8, 0, 0);
+  position:absolute;
+  width:55px;
+  height:55px;
+    border-radius:55px;
+  border:4px solid darkslategrey;
+  top:158px;
+  left:35px;
+}
+
+#leg2 {
+	-webkit-transform:rotate();
+  position:absolute;
+  background-color:darkslategrey;
+  width:8px;
+  height:235px;
+  border-radius:90px;
+  left:148px;
+  top:35px;
+}
+#leg3 {
+	-webkit-transform:rotate();
+  position:absolute;
+  background-color:darkslategrey;
+  width:8px;
+  height:255px;
+  border-radius:90px;
+  left:20px;
+  top:35px;
+}
+#metal {
+	-webkit-transform:matrix(2.6, 0, 0, .8, 0, 0);
+      -o-transform: matrix(2.6, 0, 0, .8, 0, 0);
+         transform: matrix(2.6, 0, 0, .8, 0, 0);
+  position:absolute;
+  width:60px;
+  height:60px;
+    border-radius:55px;
+  border:6px solid darkslategrey;
+  top:0px;
+  left:35px;
+}
+#metal2 {
+	-webkit-transform:matrix(2.6, 0, 0, .8, 0, 0);
+      -o-transform: matrix(2.6, 0, 0, .8, 0, 0);
+         transform: matrix(2.6, 0, 0, .8, 0, 0);
+  position:absolute;
+  width:55px;
+  height:55px;
+    border-radius:55px;
+  border:6px solid slategrey;
+  top:0px;
+  left:37px;
+}
+#seat {
+	-webkit-transform:matrix(2.6, 0, 0, .8, 0, 0);
+      -o-transform: matrix(2.6, 0, 0, .8, 0, 0);
+         transform: matrix(2.6, 0, 0, .8, 0, 0);
+  background-color:tan;
+  position:absolute;
+  width:58px;
+  height:58px;
+    border-radius:55px;
+  top:4px;
+  left:41px;
+}
+
+
+
+#bowtie { 
+  position:relative;
+}
+
 .span2 {
   width: 140px;
 }
@@ -511,9 +729,9 @@ a:hover {
 }
 
 .row-fluid .span3 {
-  width: 23.404255319148934%;
-  *width: 23.351063829787233%;
-}
+    width: 30.404255%;
+    *width: 30.404255%;
+  }
 
 .row-fluid .span2 {
   width: 14.893617021276595%;
@@ -692,7 +910,7 @@ a:hover {
  /* Custom container */
 .container-narrow {
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 850px;
 }
      
 .container-narrow > hr {
