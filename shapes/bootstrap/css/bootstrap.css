@@ -488,7 +488,7 @@ a:hover {
 #stool { 
   position:relative;
   height:250px;
-  left:60px;
+  left:27px;
 }
 
 #leg1 {
@@ -588,6 +588,106 @@ a:hover {
 #bowtie { 
   position:relative;
 }
+
+#bowtie { 
+  position:relative;
+  left:30px;
+  top:20px;
+}
+
+#left {
+position:absolute;
+width:100px;
+height:100px;
+left:5px;
+top:5px;
+
+}
+
+#toptriangle1 {
+	position:absolute;
+	-webkit-transform:rotate(90deg);
+	border-radius:0px 0px 28px 28px;
+	border-bottom: 100px solid coral;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 73px;
+	left:-80px;
+	top:20px;
+}
+#line1 {
+	position:absolute;
+	background-color:indianred;
+	width:20px;
+	height:2px;
+	top:50px;
+	left:20px;
+	-webkit-transform:rotate(20deg);
+	}
+	
+#line2 {
+	position:absolute;
+	background-color:indianred;
+	width:20px;
+	height:2px;
+	top:90px;
+	left:20px;
+	-webkit-transform:rotate(-20deg);
+	}
+#right {
+	position:absolute;
+	width:100px;
+	height:100px;
+	left:60px;
+	top:5px;
+
+}
+#line3 {
+	position:absolute;
+	background-color:indianred;
+	width:20px;
+	height:2px;
+	top:50px;
+	left:62px;
+	-webkit-transform:rotate(-20deg);
+	}
+	
+#line4 {
+	position:absolute;
+	background-color:indianred;
+	width:20px;
+	height:2px;
+	top:90px;
+	left:62px;
+	-webkit-transform:rotate(20deg);
+	}
+
+#toptriangle2 {
+	position:absolute;
+	-webkit-transform:rotate(-90deg);
+	border-bottom: 100px solid coral;
+	border-radius:0px 0px 28px 28px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 73px;
+	left:10px;
+	top:20px;
+}
+
+#center {
+	position:absolute;
+	background-color:lightblue;
+	width:70px;
+	height:70px;
+	border-radius:28px 28px 28px 28px;
+	top: 39px;
+	left: 48px;
+	
+
+}
+
 
 .span2 {
   width: 140px;
