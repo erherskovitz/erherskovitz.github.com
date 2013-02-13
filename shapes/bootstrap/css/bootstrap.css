@@ -375,6 +375,34 @@ a:hover {
   -webkit-transform:scale(.9);
 }
 
+@-webkit-keyframes chairdrop {
+	0% {  -webkit-transform-origin:100% 100%;
+			-webkit-transform:scale(.8);}
+	25% {  -webkit-transform-origin:100% 100%;
+			-webkit-transform:scale(.8) rotate(90deg);}
+    50% { -webkit-transform-origin:100% 100%; 	
+    	-webkit-transform: scale(.8) rotate(80deg);	}
+   100% { 
+      -webkit-transform: scale(.8) rotate(90deg) ;
+       -webkit-transform-origin:100% 100%; }
+	}
+
+@-webkit-keyframes spin {
+	0% {-webkit-transform:scale(.7) rotate(1turn);
+		}
+   100% { -webkit-transform: scale(.7) rotate(3turn);
+   			}
+	}
+
+#stool:hover {
+    -webkit-animation: chairdrop 2s ease; 
+  }
+  
+#bowtie:hover {
+	-webkit-animation: spin .5s infinite ease-in-out;
+  -webkit-transform-origin:50%;
+	}
+
 #crust { 
 	-webkit-transform:matrix(2.4, 0, 0, 1, 0, 0);
       -o-transform: matrix(2.4, 0, 0, 1, 0, 0);
@@ -487,14 +515,14 @@ a:hover {
 }
 
 #stool { 
+	width:100px;
   position:relative;
   height:250px;
   left:27px;
-  -webkit-transform:scale(.8)
+  -webkit-transform:scale(.8);
 }
 
 #leg1 {
-	-webkit-transform:rotate();
   position:absolute;
   background-color:darkslategrey;
   width:8px;
@@ -505,7 +533,6 @@ a:hover {
 }
 
 #leg4 {
-	-webkit-transform:rotate();
   position:absolute;
   background-color:darkslategrey;
   width:8px;
@@ -588,23 +615,19 @@ a:hover {
 
 
 #bowtie { 
-  position:relative;
   -webkit-transform:scale(.7);
     position:relative;
-  left:20px;
-  top:50px;
-}
-
-#bowtie { 
-
+  top:30px;
+  width:280px;
+  height:300px;
 }
 
 #left {
 position:absolute;
 width:100px;
 height:100px;
-left:5px;
-top:5px;
+left:60px;
+top:70px;
 
 }
 
@@ -643,8 +666,8 @@ top:5px;
 	position:absolute;
 	width:100px;
 	height:100px;
-	left:60px;
-	top:5px;
+	left:116px;
+	top:70px;
 
 }
 #line3 {
@@ -686,8 +709,8 @@ top:5px;
 	width:70px;
 	height:70px;
 	border-radius:28px 28px 28px 28px;
-	top: 39px;
-	left: 48px;
+	top: 104px;
+	left: 102px;
 	
 
 }
