@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="432px" height="432px" viewBox="0 0 432 432" enable-background="new 0 0 432 432" xml:space="preserve">
+<polygon fill="#9D9FA2" points="162.267,386.068 264.592,365.205 262.125,73.12 167.973,58.854 "/>
+<polygon fill="#FFFFFF" points="175.581,46.967 169.875,374.18 269.733,358.636 269.733,61.232 "/>
+<line fill="none" stroke="#000000" x1="192.224" y1="86.672" x2="257.846" y2="92.378"/>
+<line fill="none" stroke="#000000" x1="197.03" y1="108.9" x2="262.652" y2="114.606"/>
+<line fill="none" stroke="#000000" x1="192.224" y1="131.128" x2="257.846" y2="136.835"/>
+<line fill="none" stroke="#000000" x1="197.03" y1="153.356" x2="262.652" y2="159.062"/>
+<line fill="none" stroke="#000000" x1="192.224" y1="185.934" x2="257.846" y2="191.64"/>
+<line fill="none" stroke="#000000" x1="192.224" y1="211.166" x2="257.846" y2="216.871"/>
+<line fill="none" stroke="#000000" x1="197.03" y1="171.68" x2="262.652" y2="177.386"/>
+<line fill="none" stroke="#000000" x1="192.224" y1="236.397" x2="257.846" y2="242.104"/>
+<line fill="none" stroke="#000000" x1="197.03" y1="261.629" x2="262.652" y2="267.335"/>
+<line fill="none" stroke="#000000" x1="192.224" y1="291.203" x2="257.846" y2="296.909"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="162.267" y="45.421" width="107.467" height="340.646"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#977C59" d="M230.86,66.819c6.105,0,11.055-4.79,11.055-10.699
+		c0-5.91-4.95-10.699-11.055-10.699c-6.105,0-11.056,4.79-11.056,10.699C219.804,62.03,224.754,66.819,230.86,66.819"/>
+</g>
+<line fill="none" stroke="#000000" x1="192.224" y1="320.369" x2="257.846" y2="326.075"/>
+</svg>
