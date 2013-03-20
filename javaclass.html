@@ -1,0 +1,41 @@
+<script>
+$(function() {
+    // Figures out how to: 
+  var allBoxes = $(".box");
+  
+    // A. Set the content of all boxes to "I'M A BOX"
+  allBoxes.text ("I'M A BOX");
+  //$(".box").text("I'M A BOX"); //also works
+    // B. Set the contents of type2 boxes to "I'M TYPE2"
+
+    // C. Set the contents of box5 to "I'm 5"
+});
+</script>
+
+<div class='box type1' id='box1'>1</div>
+<div class='box type1' id='box2'>2</div>
+<div class='box type1' id='box3'>3</div>
+<div class='box type1' id='box4'>4</div>
+
+<div class='box type2' id='box5'>5</div>
+<div class='box type2' id='box6'>6</div>
+<div class='box type2' id='box7'>7</div>
+<div class='box type2' id='box8'>8</div>
+
+<style>
+.type1 { background-color:#5C5; }
+.type2 { background-color:#22A; }
+
+.box { 
+  float:left; width:15%; 
+  margin:20px 2.5%; 
+  text-align:center; 
+  border:1px solid #CCC; 
+  padding:20px 0px;
+  border-radius:5px;
+  box-shadow: 5px 5px 5px #CCC;
+  color:white;
+  font-size:2em;
+}
+
+</style>
