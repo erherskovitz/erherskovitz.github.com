@@ -5,8 +5,8 @@
   	<meta charset="UTF-8">
   	<title>ADDitional Help</title>
   	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
-  	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  	<script src="jquery.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="js/jquery.js"></script>
   </head>
   
   <body>
@@ -105,5 +105,9 @@
   	  	</div>
   	</div>
   </body>
-  
+  <script>
+  $("a").click( function () {
+	$(this).toggleClass("info");
+  });
+  </script>
  </html> 
