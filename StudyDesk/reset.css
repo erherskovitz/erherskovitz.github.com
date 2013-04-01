@@ -277,7 +277,7 @@ width:100%;
 	position:relative;
 	top:220px;
 	left:170px;
-	z-index:3
+	z-index:;
 }
 
 
@@ -299,15 +299,97 @@ width:100%;
 	left: 170px;
 
 }
+.info p {
+	font-size: 1.1em;
+	line-height: 1.32em;
+	color: white;
 
+}
 
+#timer .info p {
+	position: relative;
+	top: 407px;
+	left: 300px;
+	}
+
+#tea .info p {
+	position: relative;
+	top: 530px;
+	left: 257px;
+	}
+	
+#sticky1 .info p {
+	position: relative;
+	top: 294px;
+	left: 50px;
+	width: 250px;
+}
+
+#sticky2 .info p {
+	position: relative;
+	top: 10px;
+	left: 69px;
+	width: 250px;
+}
+
+#sticky3 .info p {
+	position: relative;
+	top: 453px;
+	left: 50px;
+	width: 250px;
+}
+
+#sticky4 .info p {
+	position: relative;
+	top: 390px;
+	left: 350px;
+	width: 250px;
+}
+
+#sticky5 .info p {
+	position: relative;
+	top: 390px;
+	left: 370px;
+	width: 250px;
+}
+#sticky6 .info p {
+	position: relative;
+	top: 390px;
+	left: 650px;
+	width: 300px;
+}
+#calendar .info p {
+	position: relative;
+	top: -20px;
+	left: 90px;
+	width: 450px;
+}
+#masonjar .info p {
+	position: relative;
+	top: -20px;
+	left: 90px;
+	width: 450px;
+}
+#sketchbook .info p {
+	position: relative;
+	top: 200px;
+	left: 100px;
+	width: 450px;
+}
+#moleskine .info p {
+	position: relative;
+	top: 600px;
+	left: 600px;
+	width: 450px;
+
+}
 #sticky1 {
 	width:90px;
 	height:20px;
 	position:relative;
 	top:330px;
 	left:50px;
-	z-index:4
+
 
 }
 
@@ -339,7 +421,7 @@ width:100%;
 	position:relative;
 	top:70px;
 	left:60px;
-	z-index:4
+
 
 }
 
@@ -370,7 +452,7 @@ width:100%;
 	position:relative;
 	top:500px;
 	left:50px;
-	z-index:4
+
 
 }
 
@@ -400,7 +482,7 @@ width:100%;
 	position:relative;
 	top:500px;
 	left:320px;
-	z-index:4
+
 
 }
 
@@ -439,7 +521,7 @@ width:100%;
 	width: 140px;
 	top: 768px;
 	left: 209px;
-	z-index:4
+	z-index:4;
 
 }
 #tea a:active + .info {
@@ -460,7 +542,7 @@ width:100%;
 	position:relative;
 	top:300px;
 	left:700px;
-	z-index:4
+
 
 }
 #sticky4 .info img {
@@ -488,7 +570,7 @@ width:100%;
 	position:relative;
 	top:200px;
 	left:350px;
-	z-index:4
+
 
 }
 #sticky5 .info img {
@@ -516,7 +598,7 @@ width:100%;
 	position:relative;
 	top:250px;
 	left:950px;
-	z-index:4
+
 
 }
 #sticky6 .info img {
