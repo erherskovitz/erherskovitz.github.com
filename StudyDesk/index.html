@@ -18,25 +18,25 @@
   			<p> Time to get your creative work space all set. If you follow some of these tips and ideas you can find yourself working faster and better! 
   			</p>
   		  </div>
-  	  		<div class="hover" id="todo">
+  	  		<div class="hoverpost2" id="todo">
   	  		 <a href="#"><img src="images/todo.png"/></a>
   	  		 <div class="info"> <img src="images/todo.png"/>
   	  		 <p>To do lists are really valuable for people with ADHD and ADD. Download a to-do list template!</p>
   	  		 </div>
   	  		</div>
-  	  		<div class="hover" id="sticky1">
+  	  		<div class="hoverpost" id="sticky1">
   	  		 <a href="#"><img src="images/postit2.png"/></a>
   	  		  <div class="info"> <img src="images/postit2.png"/>
   	  		 <p>Make sure your workspace is clean and tidy! A dirty space will cause distractions!</p>
   	  		 </div>
   	  		</div>
-  	  		<div class="hover" id="sticky2">
+  	  		<div class="hoverpost" id="sticky2">
   	  		 <a href="#"><img src="images/postit3.png"/></a>
   	  		 <div class="info"> <img src="images/postit3.png"/>
   	  		 <p>Try a sudoku or a physical exercise before starting to do some work. Make sure to time yourself, as to not get distracted!</p>
   	  		 </div>
   	  		</div>
-  	  		<div class="hover" id="sticky3">
+  	  		<div class="hoverpost" id="sticky3">
   	  		 <a href="#"><img src="images/postit4.png"/></a>
   	  		 <div class="info"> <img src="images/postit4.png"/>
   	  		 <p>Make sure to keep lots of sticky notes around so you can leave yourself little notes, and maybe some encouragement, too!</p>
@@ -56,19 +56,19 @@
   	  		 downsides of tea and coffee, try a cafea cruda pill, which is a natural sugar pill that bring caffeine to the brain in a more natural way.</p>
   	  		 </div>
   	  		</div>
-  	  		<div class="hover" id="sticky4">
+  	  		<div class="hoverpost" id="sticky4">
   	  		 <a href="#"><img src="images/postit5.png"/></a>
   	  		 <div class="info"> <img src="images/postit5.png"/>
   	  		 <p>If you're feeling stuck, talk to friends and family for support. Try and help them to understand what it is that you are going through.</p>
   	  		 </div>
   	  		</div>
-  	  		<div class="hover" id="sticky5">
+  	  		<div class="hoverpost" id="sticky5">
   	  		 <a href="#"><img src="images/postit6.png"/></a>
   	  		 <div class="info"> <img src="images/postit6.png"/>
   	  		 <p>Make sure to always write down things as people are talking to you. Or try using recordings and you can play them back later if you find yourself forgetting things!</p>
   	  		 </div>
   	  		</div>
-  	  		<div class="hover" id="sticky6">
+  	  		<div class="hoverpost" id="sticky6">
   	  		 <a href="#"><img src="images/postit7.png"/></a>
   	  		 <div class="info"> <img src="images/postit7.png"/>
   	  		 <p>Keeping detailed notes is always important! Make sure to keep a little notebook or sketchbook with you.</p>
@@ -113,8 +113,73 @@
   	</div>
   </body>
   <script>
-  $("a").click( function () {
-	$("info").fadeIn("fast");
-  });
+   $("#todo a").click( function () {
+  $("#todo .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+	   $("#sticky1 a").click( function () {
+  $("#sticky1 .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+	   $("#sticky2 a").click( function () {
+  $("#sticky2 .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+$("#sticky3 a").click( function () {
+  $("#sticky3 .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#weekly a").click( function () {
+  $("#weekly .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#calendar a").click( function () {
+  $("#calendar .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#moleskine a").click( function () {
+  $("#moleskine .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#sketchbook a").click( function () {
+  $("#sketchbook .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#masonjar a").click( function () {
+  $("#masonjar .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#sticky3 a").click( function () {
+  $("#sticky3 .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#sticky4 a").click( function () {
+  $("#sticky4 .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#sticky5 a").click( function () {
+  $("#sticky5 .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#sticky6 a").click( function () {
+  $("#sticky6 .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#tea a").click( function () {
+  $("#tea .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#timer a").click( function () {
+  $("#timer .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+   $("#moleskine a").click( function () {
+  $("#moleskine .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+	
+	
+	
+	
   </script>
  </html> 
