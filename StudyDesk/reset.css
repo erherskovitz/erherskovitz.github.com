@@ -580,6 +580,15 @@ width:100%;
 
 }
 
+#sketchbook .info p img  {
+	position:relative;
+	width: 350px;
+	top: 19px;
+	left: 40px;
+
+}
+
+
 #sketchbook .info {
 	display:none;
 	width:1200px;
@@ -790,6 +799,17 @@ width:100%;
       -webkit-transform: rotate(-5deg) ;
        -webkit-transform-origin:50% 50%; }
 	}
+@-webkit-keyframes timer {
+	0% {  -webkit-transform-origin:50% 0%;
+			}
+	25% {  -webkit-transform-origin:50% 0%;
+			-webkit-transform: rotate(10deg);}
+    50% { -webkit-transform-origin:50% 0%; 	
+    	-webkit-transform: rotate(0deg);	}
+   100% { 
+      -webkit-transform: rotate(-10deg) ;
+       -webkit-transform-origin:50% 0%; }
+	}
 	
 @-webkit-keyframes spin {
 	0% {-webkit-transform:scale(.7) rotate(1turn);
@@ -810,4 +830,8 @@ width:100%;
 	-webkit-animation: postit .5s ease-in-out;
   -webkit-transform-origin:50%;
 	}
-
+#timer:hover {
+	-webkit-animation: timer .2s ease-in-out;
+	-webkit-animation-iteration-count:4;
+  -webkit-transform-origin:100%;
+	}
