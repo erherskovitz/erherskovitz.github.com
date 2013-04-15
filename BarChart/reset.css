@@ -1,0 +1,128 @@
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:1000px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+	
+body { 
+		padding-top:20px;
+		margin-right:auto;
+		margin-left:20px; 
+		width: 100% 
+		text-align:center;
+		max-width:2000px;
+		min-width:500px;
+		background-color:lightblue;
+		
+		}
+
+p {
+	font-family: museo;
+	width:65%;
+	
+	}
+
+{
+	
+	margin:10px;
+	padding:3px;
+	line-height:1.5em;
+	
+	
+	}
+.row {
+		
+		}
+.name {	
+		position:absolute;
+		left:0px;
+		width:200px;
+		margin-right:4px;
+		margin-left:10px;
+		text-align:right;
+		padding-right:5px;
+		height:25px;
+		line-height:1.7em;
+		
+		}
+.salary {
+		height:25px;
+		box-shadow: 2px 3px 5px #888888;
+		margin-top:5px;
+		margin-left:210px;
+		background-color:rgb(238, 222, 102);
+		color:white;
+		line-height:1.7em;
+		padding-left:5px;
+		}
+
+.clear {
+		clear:both;
+		}

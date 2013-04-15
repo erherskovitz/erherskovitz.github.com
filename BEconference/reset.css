@@ -1,0 +1,303 @@
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:1000px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+
+body { 
+	margin-right:auto;
+	margin-left:auto; 
+	width: 100% 
+	text-align:center;
+	max-width:2000px;
+	min-width:500px;
+	background-color:lemonchiffon;
+		
+		}
+#background {
+	height:3000px;
+	width:100%;
+	background-image: url(images/paperbag.jpg);
+	background-repeat:no;
+	position:relative;
+	margin:0 auto;
+}
+#nav {
+	background-image: url(images/ripped_paper.png);
+	width: 54%;
+	height: 120px;
+	margin: 0 auto;
+	z-index:5;
+	position:absolute;
+	left: 330px;
+}
+ul.nav {
+	position:relative;
+	margin:0 auto;
+	width:100%;
+	list-style-type:none;
+	text-align:center;
+	list-style-position:outside;
+		
+		}
+		
+ul.nav li {	
+	height:20px;	
+	width:22%;
+	margin-left:12px;
+	float:left;
+	margin-top:-15px;
+
+		
+		}
+		
+		
+.nav li img{		
+	width:100%;
+
+		
+		}
+
+#topinfo {
+	
+	margin-top:100px;
+	position:absolute;
+	width:99%;
+	height:100px;
+	border-top:dashed;
+	border-bottom:dashed;
+		
+}
+#topinfo img {
+	width:30%;
+	position:absolute;
+	left: 500px;
+top: -60px;
+	z-index:1;
+	
+}
+#middleline {
+	margin-top:50px;
+	position:absolute;
+	width:100%;
+	border-top:dashed;
+	border-color:lightblue;
+	z-index:0;
+	
+}
+#maininfo {
+	width:50%;
+	margin:0 auto;
+	position:relative;
+	top:240px;
+}
+#maininfo h1 {
+	font-family: 'Trocchi', serif;
+	font-style:bold;
+	font-size:1.2em;
+	width:52%;
+	margin:0 auto;
+	}
+#maininfo h2 {
+	padding-top:5px;
+	font-style:oblique;
+	font-family: 'Trocchi', serif;
+	width:66%;
+	margin:0 auto;
+	}
+#maininfo h3 {
+	padding-top:5px;
+	font-family: 'Trocchi', serif;
+	width:30%;
+	margin:0 auto;
+	}
+#maininfo h4 {
+	padding-top:5px;
+	font-family: 'Trocchi', serif;
+	width:32%;
+	margin:0 auto;
+	}
+#maininfo h5 {
+	padding-top:5px;
+	font-family: 'Trocchi', serif;
+	width:17%;
+	margin:0 auto;
+	}
+
+#slider {
+	z-index:0;
+	padding-top:20px;
+	
+}
+	
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+#footer {
+	width:100%;
+	position:absolute;
+	bottom:-2050px;
+	}
+
+#footer p {
+	padding-top:5px;
+	font-family: 'Trocchi', serif;
+	width:32%;
+	margin:0 auto;
+	}
+@-webkit-keyframes postit {
+	0% {  -webkit-transform-origin:50% 50%;
+			}
+	25% {  -webkit-transform-origin:50% 50%;
+			-webkit-transform: rotate(15deg);}
+    50% { -webkit-transform-origin:50% 50%; 	
+    	-webkit-transform: rotate(0deg);	}
+   100% { 
+      -webkit-transform: rotate(-15deg) ;
+       -webkit-transform-origin:50% 50%; }
+	}
+	
+@-webkit-keyframes todo {
+	0% {  -webkit-transform-origin:50% 50%;
+			}
+	25% {  -webkit-transform-origin:50% 50%;
+			-webkit-transform: rotate(5deg);}
+    50% { -webkit-transform-origin:50% 50%; 	
+    	-webkit-transform: rotate(0deg);	}
+   100% { 
+      -webkit-transform: rotate(-5deg) ;
+       -webkit-transform-origin:50% 50%; }
+	}
+@-webkit-keyframes timer {
+	0% {  -webkit-transform-origin:50% 0%;
+			}
+	25% {  -webkit-transform-origin:50% 0%;
+			-webkit-transform: rotate(10deg);}
+    50% { -webkit-transform-origin:50% 0%; 	
+    	-webkit-transform: rotate(0deg);	}
+   100% { 
+      -webkit-transform: rotate(-10deg) ;
+       -webkit-transform-origin:50% 0%; }
+	}
+	
+@-webkit-keyframes spin {
+	0% {-webkit-transform:scale(.7) rotate(1turn);
+		}
+   100% { -webkit-transform: scale(.7) rotate(3turn);
+   			}
+	}
+
+#stool:hover {
+    -webkit-animation: chairdrop 2s ease; 
+  }
+  
+.hoverpost2:hover {
+	-webkit-animation: todo .5s ease-in-out;
+  -webkit-transform-origin:50%;
+	}
+.hoverpost:hover {
+	-webkit-animation: postit .5s ease-in-out;
+  -webkit-transform-origin:50%;
+	}
+#timer:hover {
+	-webkit-animation: timer .2s ease-in-out;
+	-webkit-animation-iteration-count:4;
+  -webkit-transform-origin:100%;
+	}

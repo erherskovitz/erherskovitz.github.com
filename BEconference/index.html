@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  	<meta charset="UTF-8">
+  	<title>BE Conference: Boston Educational Conference</title>
+  	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+  	<link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+  </head>
+  <script>
+   $("#todo a").click( function () {
+  $("#todo .info").fadeIn();
+	});
+	$(".info").on("click",function() { $(this).fadeOut(); });
+
+  // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $(".rslides").responsiveSlides({
+        maxwidth: 3000,
+        speed: 800
+      });
+
+    });
+
+$(document).ready(function(){
+	$(window).scroll(function(){
+		var scrollTop = 90;
+		if($(window).scrollTop() >= scrollTop){
+			$('#nav').css({
+				position : 'fixed',
+				top : '0'
+			});
+		}
+		if($(window).scrollTop() < scrollTop){
+			$('#nav').removeAttr('style');	
+		}
+	})
+})
+  </script>
+  <body>
+  	<div id='site-wrapper'>
+  		 <div id="background">
+  		 	<div id="topinfo">
+  		 		<img src="images/BE.png"/>
+  		 		<div id="middleline">
+  		 		</div>
+  		 	</div>
+  		 	<div id="nav">
+  		 		<ul class="nav">
+  		 		<a><li><img src="images/about.png"/></li></a>
+  		 		<a><li><img src="images/speakers.png"/></li></a>
+  		 		<a><li><img src="images/schedule.png"/></li></a>
+  		 		<a><li><img src="images/registration.png"/></li></a>
+  		 		</ul>
+  		 	</div> 
+  		 	<div id="section1">
+  		 		<div id="maininfo" >
+  		 		<h1>
+  		 		Boston Education Conference
+  		 		</h1>
+  		 		<h2>
+  		 		Modern Technology meets Classic Education
+  		 		</h2>
+  		 		<h3>
+  		 		September 9th - 11th
+  		 		</h3>
+  		 		<h4>
+  		 		Boston Public Library
+  		 		</h4>
+  		 		<h5>
+  		 		Boston, MA
+  		 		</h5>
+  		 		 <div id="slider">
+  		 		  <ul class="rslides">
+  		 			<li><img src="images/rabb3.jpg"/></li>
+  		 			<li><img src="images/boston-public.jpg"/></li>
+  		 			<li><img src="images/mcr.jpg"/></li>
+  		 			<li><img src="images/bostangle.jpg"/></li>
+  		 		  </ul>
+  		 		 </div>
+  		 		</div>
+  		 	</div>
+  		 	<div id="section2">
+  		 	</div>
+  		 	<div id="section3">
+  		 	</div>
+  		 	<div id="section4">
+  		 	</div>
+  		 </div>
+  		 <div id="footer">
+  		<p> info for the bottom, for right now. </p>
+  		 </div>
+  	</div>
+  </body>
+  
+ </html> 
