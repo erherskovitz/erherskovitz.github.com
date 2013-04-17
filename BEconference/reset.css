@@ -109,7 +109,7 @@ ul.nav {
 		
 		}
 		
-ul.nav li {	
+ul.nav li a {	
 	height:20px;	
 	width:22%;
 	margin-left:12px;
@@ -120,7 +120,7 @@ ul.nav li {
 		}
 		
 		
-.nav li img{		
+.nav li a img{		
 	width:100%;
 
 		

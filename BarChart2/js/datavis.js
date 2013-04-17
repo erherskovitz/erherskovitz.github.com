@@ -1,6 +1,17 @@
 $(function() {
-	$("<p>").text("My Visualization Right Hurr")
+	$("<h1>").text("Boston Crime Rates")
+      		 .appendTo("body");
+    $("<h2>").text("Key")
+      		 .appendTo("body");
+    $("<li>").text("total incidents")
+    		 .addClass("incidentli")
+      		 .appendTo("h2");
+    $("<li>").text("total domestic")
+    		 .addClass("domesticli")
+      		 .appendTo("h2");
+	$("<p>").text("")
 			.appendTo("body");
+	
 
 });
 
