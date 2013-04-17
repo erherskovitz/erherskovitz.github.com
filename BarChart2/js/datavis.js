@@ -29,10 +29,10 @@ $(function() {
       var maxDom = 2841;
       
       var incFraction = inc / maxIncident;
-      var domFraction = dom / maxDom;
+      var domFraction = dom / maxIncident;
       
-      var incWidth = incFraction * 5000;
-   	  var domWidth = domFraction * 500;
+      var incWidth = incFraction * 1000;
+   	  var domWidth = domFraction * 1000;
       
       var row = $("<div>").addClass("row");
       
