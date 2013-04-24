@@ -7,7 +7,9 @@
   	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
   	<link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  	<script type="text/javascript" src="js/jquery.scrollto.js"></script>
 	<script src="js/responsiveslides.min.js"></script>
+	
   </head>
   <script>
    $("#todo a").click( function () {
@@ -26,7 +28,7 @@
 
     });
 
-$(document).ready(function(){
+
 	$(window).scroll(function(){
 		var scrollTop = 90;
 		if($(window).scrollTop() >= scrollTop){
@@ -39,22 +41,32 @@ $(document).ready(function(){
 			$('#nav').removeAttr('style');	
 		}
 	})
-})
+
+$('#section1').ScrollTo({
+    duration: 2000,
+    easing: 'linear'
+});
+$('#section2').ScrollTo({
+    duration: 2000,
+    easing: 'linear'
+});
   </script>
   <body>
   	<div id='site-wrapper'>
   		 <div id="background">
   		 	<div id="topinfo">
   		 		<img src="images/BE.png"/>
+  		 		<h1>Boston Educational Conference</h1>
   		 		<div id="middleline">
   		 		</div>
+  		 		<h2>September 6th – 9th</h2>
   		 	</div>
   		 	<div id="nav">
   		 		<ul class="nav">
-  		 		<li><a href="#"><img src="images/about.png"/></a></li>
-  		 		<li><a href="#"><img src="images/speakers.png"/></a></li>
-  		 		<li><a href="#"><img src="images/schedule.png"/></a></li>
-  		 		<li><a href="#"><img src="images/registration.png"/></a></li>
+  		 		<li><a href="#section2"><img src="images/speakers.png"/></a></li>
+  		 		<li><a href="#section1"><img src="images/about.png"/></a></li>
+  		 		<li><a href="#section3"><img src="images/schedule.png"/></a></li>
+  		 		<li><a href="#section4"><img src="images/registration.png"/></a></li>
   		 		</ul>
   		 	</div> 
   		 	<div id="section1">
@@ -85,68 +97,121 @@ $(document).ready(function(){
   		 		</div>
   		 	</div>
   		 	<div id="section2">
-  		 	<ul id="names">
-  		 		<div id="lee_teitel">
+  		 	<ul class="names">
+  		 		<div class="name" id="lee_teitel">
   		 		   <a href="x">
-  		 			<li><img src="images/lee.png"/></a></li>
-  		 			<li><img src="images/teitel.png"/></a></li>
+  		 			<li><img src="images/lee_teitel.png"/></a></li>
   		 		   </a>
   		 		</div>
-  		 		<div id="steve_seidel">
+  		 		<div class="name" id="steve_seidel">
   		 		  <a href="x">
-  		 			<li><img src="images/steve.png"/></a></li>
-  		 			<li><img src="images/seidel.png"/></a></li>
+  		 			<li><img src="images/steve_seidel.png"/></a></li>
   		 		  </a>
   		 		</div>
-  		 		<div id="pamela_mason">
+  		 		<div class="name" id="pamela_mason">
   		 			<a href="x">
-  		 			<li><img src="images/pamela.png"/></a></li>
-  		 			<li><img src="images/mason.png"/></a></li>
+  		 			<li><img src="images/pamela_mason.png"/></a></li>
   		 		  </a>
   		 		</div>
-  		 		<div id="kay_merseth">
+  		 		<div class="name" id="ilona_holland">
   		 			<a href="x">
-  		 			<li><img src="images/kay.png"/></a></li>
-  		 			<li><img src="images/merseth.png"/></a></li>
+  		 			<li><img src="images/ilona_holland.png"/></a></li>
   		 		  </a>
   		 		</div>
-  		 		<div id="katherine_boles">
+  		 		<div class="name" id="david_kahle">
   		 			<a href="x">
-  		 			<li><img src="images/katherine.png"/></a></li>
-  		 			<li><img src="images/boles.png"/></a></li>
+  		 			<li><img src="images/david_kahle.png"/></a></li>
   		 		  </a>
   		 		</div>
-  		 		<div id="joseph_blatt">
+  		 	</ul>
+  		 	<ul class="names">
+  		 		<div class="name" id="catherine_elgin">
   		 			<a href="x">
-  		 			<li><img src="images/joseph.png"/></a></li>
-  		 			<li><img src="images/blatt.png"/></a></li>
+  		 			<li><img src="images/catherine_elgin.png"/></a></li>
   		 		  </a>
   		 		</div>
-  		 		<div id="ilona_holland">
+  		 		<div class="name" id="joseph_blatt">
   		 			<a href="x">
-  		 			<li><img src="images/ilona.png"/></a></li>
-  		 			<li><img src="images/holland.png"/></a></li>
+  		 			<li><img src="images/joseph_blatt.png"/></a></li>
   		 		  </a>
   		 		</div>
-  		 		<div id="david_kahle">
+  		 		<div class="name" id="kay_merseth">
   		 			<a href="x">
-  		 			<li><img src="images/david.png"/></a></li>
-  		 			<li><img src="images/kahle.png"/></a></li>
+  		 			<li><img src="images/kay_merseth.png"/></a></li>
   		 		  </a>
   		 		</div>
-  		 		<div id="catherine_elgin">
+  		 		<div class="name" id="katherine_boles">
   		 			<a href="x">
-  		 			<li><img src="images/catherine.png"/></a></li>
-  		 			<li><img src="images/elgin.png"/></a></li>
+  		 			<li><img src="images/katherine_boles.png"/></a></li>
   		 		  </a>
   		 		</div>
   		 	</ul>
   		 	</div>
-  		 	<div id="section3">
+  		 	<div id="section3">	
+  		 		<img src="images/schedule_big.png"/>
   		 	</div>
   		 	<div id="section4">
+  		 		<form id="contact-form" name="contact-form" method="post" action="submit.php">	<!-- The form, sent to submit.php -->
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="5">
+
+			<tr>
+				<td width="45%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="first_name" value="First" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="last_name" value="Last" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="title" value="Title" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="institution" value="Institution" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="department" value="Department" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="address_1" value="Address 1" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="address_2" value="Address 2" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="city" value="City" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="state" value="State/Province" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="zipcode" value="Zip/Postal Code" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="country" value="Country" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="phone1" value="Primary Phone" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="phone2" value="Secondary Phone" /></td>
+				<td width="50%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="email" value="Email" /></td>
+				<td width="37%" id="errOffset">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td><label for="subject">Subject</label></td>
+				<td><select name="subject" id="subject">
+					<option value="" selected="selected"> Department </option>
+					<option value="Question">Art Ed</option>
+					<option value="Business proposal">Elementary Ed</option>
+					<option value="Advertisement">Secondary Ed</option>
+					<option value="Complaint">Gen Ed</option>
+					<option value="Complaint">ELA/ELS</option>
+					</select>          
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td valign="top"><label for="message">Message</label></td>
+				<td><textarea name="message" id="message" class="validate[required]" cols="35" rows="5"></textarea></td>
+				<td valign="top">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td><label for="captcha"></label></td>
+				<td><input type="text" class="validate[required,custom[onlyNumber]]" name="captcha" id="captcha" /></td>
+				<td valign="top">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td valign="top">&nbsp;</td>
+				<td colspan="2"><input type="submit" name="button" id="button" value="Submit" />
+					<input type="reset" name="button2" id="button2" value="Reset" />
+				<img id="loading" src="img/ajax-load.gif" width="16" height="16" alt="loading" />
+				</td></tr>
+
+		</table>
+	</form>
+				<img src="images/registration_big.png"/>
   		 	</div>
   		 </div>
+  		 
   		 <div id="footer">
   		<p> info for the bottom, for right now. </p>
   		 </div>
