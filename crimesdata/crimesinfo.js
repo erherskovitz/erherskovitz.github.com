@@ -1,7 +1,7 @@
 
 $(function() {
    //console.log(crimes.meta);
-  //console.log(crimes.data);
+  console.log(crimes.data);
   $("<p>").text("")
 			.appendTo("body");
 			
@@ -27,7 +27,7 @@ $(function() {
 
 	//console.log([minX, maxX, minY, maxY]);
 			
-  var i = 0;
+  /*var i = 0;
   while(i < 100) { // crimes.data.length){
     var crime = crimes.data[i];
     
@@ -44,9 +44,9 @@ $(function() {
 	
 	var diffY = maxY - minY;
 	var screenY =  (y - minY) / diffY * 500;
-    
+    */
      
-     var div = $("<div>").css({
+    /* var div = $("<div>").css({
      							left: screenX,
      							top: screenY,
      							width:"10",
@@ -57,7 +57,7 @@ $(function() {
      							})
      							.attr("title", neighborhood + crimeCode);
      							
-    	$("body").append(div); 
+    	$("body").append(div); */
       
      /* var crimeCodeDiv = $("<div>")
       				.addClass("crime_code")
@@ -81,7 +81,7 @@ $(function() {
       
       
     i++;
-  }
+  
  });
   /*console.log(crimes);*/
 
