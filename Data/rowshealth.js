@@ -1,4 +1,4 @@
-var store = {
+var hstore = {
   "meta" : {
     "view" : {
       "id" : "zzzz-zzzz",

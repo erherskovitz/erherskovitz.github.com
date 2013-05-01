@@ -130,9 +130,13 @@ p {
 	 line-height:2em;
 	 font-size:.7em;
 	}
+	
+		
 #map-canvas {
 	width:100%;
 	height:500px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
 	}
 #bottominfo {
 	width:900px;
