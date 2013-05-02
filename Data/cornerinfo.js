@@ -1,6 +1,7 @@
     $(function() {
-    	//console.log(cstore.data);
+    	console.log(cstore.data);
 
+   	 	console.log(data);
    	 	
    	      var mapOptions = {
       center: new google.maps.LatLng(42.378817,-71.01644849764489),
@@ -12,10 +13,6 @@
       		var i = 0;
       		while (i < cstore.data.length) {
         	var store = cstore.data[i];
-        	var healthy = hstore.data[i];
-			
-			console.log(store[13][1]);
-			console.log(store[13][2]);
 			
         	var lon = store[13][1];
     		var lat = store[13][2];
@@ -29,14 +26,49 @@
       			
    			var marker = new google.maps.Marker({
         	position: new google.maps.LatLng(lon,lat),
-        	title: "MassArt",
+        	title: store[8],
         	map: myMap,
         	icon: point
         	
         	})
+    		i++;
     
-        	
-        	var longi = healthy[13][1];
+      		}
+      		//console.log(hstore.data);
+      		
+      		var i = 0;
+      		while (i < hstore.data.length) {
+        	var healthy = hstore.data[i];
+      		
+      		var latlong = healthy[13].split(",");
+      		
+      		var longi = latlong[0];
+    		var late = latlong[1];
+    		
+    		//console.log(hstore.data.length);
+    		//console.log(healthy[14][1]);
+			//console.log(healthy[14][2]);
+      		
+    		
+    		var carrot = {	url:'carrot.png',
+    						size: new google.maps.Size(71, 71),
+  							origin: new google.maps.Point(0, 0),
+  							anchor: new google.maps.Point(17, 34),
+							scaledSize: new google.maps.Size(19, 32)
+    					};
+    		
+        	var marker = new google.maps.Marker({
+        	position: new google.maps.LatLng(longi,late),
+        	title: healthy[8],
+        	map: myMap,
+        	icon: carrot
+        	})
+      		    i++;
+    
+      		}
+       	});
+        
+        	/*var longi = healthy[13][1];
     		var late = healthy[13][2];
     		
     		var carrot = {	url:'carrot.png',
@@ -51,11 +83,8 @@
         	title: "MassArt",
         	map: myMap,
         	icon: carrot
-        	})
-    	i++;
+        	})*/
     
-      }
-       });
        /*var heatmap = new google.maps.visualization.HeatmapLayer({
         data: myHeatmapData,
          heatmap.setMap(myMap);

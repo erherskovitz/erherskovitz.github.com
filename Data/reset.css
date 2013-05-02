@@ -124,11 +124,12 @@ h1 {
 h2 {
 	 font-family: 'edmondsansbold';
 	 font-size:2em;
+	 margin-bottom:15px;
 	}
 p {
 	 font-family: 'edmondsansmedium';
 	 line-height:2em;
-	 font-size:.7em;
+	 font-size:1em;
 	}
 	
 		
@@ -142,4 +143,46 @@ p {
 	width:900px;
 	height:300px;
 	padding:20px;
+	}
+#moneysections {
+	width: 600px;
+	position: relative;
+	left: 550px;
+	top: -60px;
+	height: 30px;
+	}
+.box {
+	margin-left:20px;
+	float:left;
+	width:150px;
+	height:20px;
+	}
+.boxhover {
+	position:absolute;
+	width:150px;
+	height:20px;
+	}
+#ten {
+	background-color:gold;
+	}
+#tenhover {
+	background-color:rgb(224, 220, 199);
+	left:20px;
+	display:none;
+		}
+#forty {
+	background-color:orange;
+	}
+#fortyhover {
+	background-color:rgb(240, 220, 184);
+	left:190px;
+	display:none;
+	}
+#seventy {
+	background-color:orangered;
+	}
+#seventyhover {
+	background-color: rgb(240, 189, 170);
+	left:360px;
+	display:none;
 	}
