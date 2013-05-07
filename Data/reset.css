@@ -151,6 +151,14 @@ p {
 	top: -60px;
 	height: 30px;
 	}
+
+#moneysections p{
+	width: 200px;
+	float:left;
+	left: 550px;
+	top: -60px;
+	height: 30px;
+	}
 .box {
 	margin-left:20px;
 	float:left;
@@ -164,6 +172,9 @@ p {
 	}
 #ten {
 	background-color:gold;
+	position:absolute;
+	top: 25px;
+	left:-20px;
 	}
 #tenhover {
 	background-color:rgb(224, 220, 199);
@@ -172,6 +183,9 @@ p {
 		}
 #forty {
 	background-color:orange;
+	position:absolute;
+	top: 25px;
+	left:181px;
 	}
 #fortyhover {
 	background-color:rgb(240, 220, 184);
@@ -180,9 +194,17 @@ p {
 	}
 #seventy {
 	background-color:orangered;
+	position:absolute;
+	top: 25px;
+	left: 382px;
 	}
 #seventyhover {
 	background-color: rgb(240, 189, 170);
 	left:360px;
 	display:none;
+	}
+#under p{
+	position: absolute;
+	left: 790px;
+	top: 740px;
 	}
