@@ -3,15 +3,52 @@
   
   <head>
   	<meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   	<title>BE Conference: Boston Educational Conference</title>
+  	
   	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
   	<link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
+  	
+  	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.lettering-0.6.1.min.js"></script>
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   	<script type="text/javascript" src="js/jquery.scrollto.js"></script>
-	<script src="js/responsiveslides.min.js"></script>
+  	<script src="js/jquery.scrollorama.js"></script>
+
 	
   </head>
   <script>
+   $(document).ready(function() {
+
+
+			var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
+
+
+			scrollorama.onBlockChange(function() {
+				var i = scrollorama.blockIndex;
+				$('#console')
+					.css('display','block')
+					.text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'));
+			});
+
+			scrollorama
+				.animate('#schedule img',{ duration: 850, property:'right', start:-1400, end:-615 })
+				.animate('#paper',{ duration:900, property:'bottom', start:-1000, end:490 });
+			
+			/*var $easing = $('#paper'),
+				$clone = $easing.clone().appendTo('#examples-easing')
+								.css({position:'relative',top:'-2.95em'})
+								.lettering();
+			$easing.css({ color: '#131420', textShadow: '0 1px 0 #363959' });
+			easing_array = [	'easeOutBounce',
+								'easeOutQuad',
+								'easeOutCubic',
+								'easeOutQuart',
+								'easeOutQuint', 
+								'easeOutExpo' 		];	*/
+			});
+
+
    $("#todo a").click( function () {
   $("#todo .info").fadeIn();
 	});
@@ -39,8 +76,7 @@ $('#section2').ScrollTo({
 			$('#nav').removeAttr('style');	
 		}
 	})
-
-
+  
   </script>
   <body>
   	<div id='site-wrapper'>
@@ -60,7 +96,7 @@ $('#section2').ScrollTo({
   		 		<li><a href="#section4"><img src="images/registration.png"/></a></li>
   		 		</ul>
   		 	</div> 
-  		 	<div id="section1">
+  		 	<div class="scrollblock" id="section1">
   		 		<div id="maininfo" >
   		 		 <div id="text">
   		 		 <ul id="bec">
@@ -83,7 +119,7 @@ $('#section2').ScrollTo({
   		 		 	</div>
   		 		</div>
   		 	</div>
-  		 	<div id="section2">
+  		 	<div class="scrollblock" id="section2">
   		 	<ul class="names">
   		 		<div class="name" id="lee_teitel">
   		 		   <a href="x">
@@ -134,13 +170,17 @@ $('#section2').ScrollTo({
   		 		</div>
   		 	</ul>
   		 	</div>
-  		 	<div id="section3">	
+  		 	<div class="scrollblock" id="section3">
   		 	  <div id="building">
   		 		<img src="images/central-floor-plan.png"/>
   		 	  </div>
-  		 		<img src="images/schedule_big.png"/>
+  		 	  <div id="schedule">
+  		 		<img src="images/schedule_big.png" id="move-it" />
+  		 	  </div>
   		 	</div>
-  		 	<div id="section4">
+  		 	
+  		 	<div class="scrollblock" id="section4">
+  		 	<div id="paper">
   		 		<form id="contact-form" name="contact-form" method="post" action="submit.php">	<!-- The form, sent to submit.php -->
 
 		<table width="100%" border="0" cellspacing="0" cellpadding="5">
@@ -181,15 +221,11 @@ $('#section2').ScrollTo({
 				</td></tr>
 
 		</table>
-	</form>
+				</form>
 				<img src="images/registration_big.png"/>
   		 	</div>
   		 </div>
-  		 
-  		 <div id="footer">
-  		
-  		 </div>
+  		</div>
   	</div>
   </body>
-  
  </html> 

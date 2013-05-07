@@ -9,6 +9,9 @@
         mapTypeId: google.maps.MapTypeId.ROADMAP // ROADMAP, SATELLITE, HYBRID, TERRAIN
       };
    	       	var myMap = new google.maps.Map($("#map-canvas")[0],mapOptions);
+   	       	
+   	       	var georssLayer = new google.maps.KmlLayer('https://maps.google.com/maps/ms?msid=207036911883524595366.0004dc13e0f4ebb53d3f7&msa=0&ll=42.381309,-71.038027&spn=0.022983,0.046992');
+				georssLayer.setMap(myMap);
 
       		var i = 0;
       		while (i < cstore.data.length) {
@@ -23,6 +26,7 @@
   						anchor: new google.maps.Point(17, 34),
 						scaledSize: new google.maps.Size(17, 32)
    						 };
+   						 
       			
    			var marker = new google.maps.Marker({
         	position: new google.maps.LatLng(lon,lat),
