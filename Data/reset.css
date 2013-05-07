@@ -178,7 +178,7 @@ p {
 	}
 #tenhover {
 	background-color:rgb(224, 220, 199);
-	left:20px;
+	top: 25px;
 	display:none;
 		}
 #forty {
@@ -189,7 +189,8 @@ p {
 	}
 #fortyhover {
 	background-color:rgb(240, 220, 184);
-	left:190px;
+	top: 25px;
+	left:201px;
 	display:none;
 	}
 #seventy {
@@ -200,11 +201,15 @@ p {
 	}
 #seventyhover {
 	background-color: rgb(240, 189, 170);
-	left:360px;
+	top: 25px;
+	left: 402px;
 	display:none;
 	}
 #under p{
 	position: absolute;
 	left: 790px;
 	top: 740px;
+	}
+Polygon {
+	display:none;
 	}

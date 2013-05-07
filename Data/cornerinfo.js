@@ -10,9 +10,9 @@
       };
    	       	var myMap = new google.maps.Map($("#map-canvas")[0],mapOptions);
    	       	
-   	       	var georssLayer = new google.maps.KmlLayer('https://maps.google.com/maps/ms?msid=207036911883524595366.0004dc13e0f4ebb53d3f7&msa=0&ll=42.381309,-71.038027&spn=0.022983,0.046992');
+   	       	var georssLayer = new google.maps.KmlLayer('https://maps.google.com/maps/ms?authuser=0&vps=2&hl=en&ie=UTF8&msa=0&output=kml&msid=207036911883524595366.0004dc13e0f4ebb53d3f7');
 				georssLayer.setMap(myMap);
-
+				
       		var i = 0;
       		while (i < cstore.data.length) {
         	var store = cstore.data[i];
@@ -38,6 +38,30 @@
     		i++;
     
       		}
+      		$("#ten").click( function () {
+  				$("#tenhover").show();
+  				$(".yellow").hide();
+					});
+			$("#tenhover").click( function () {
+  				$("#tenhover").hide();
+  				$(".yellow").show();
+					});
+			$("#forty").click( function () {
+  				$("#fortyhover").show();
+  				$(".orange").hide();
+					});
+			$("#fortyhover").click( function () {
+  				$("#fortyhover").hide();
+  				$(".orange").show();
+					});
+			$("#seventy").click( function () {
+  				$("#seventyhover").show();
+  				$(".red").hide();
+					});
+			$("#seventyhover").click( function () {
+  				$("#seventyhover").hide();
+  				$(".red").show();
+					});
       		//console.log(hstore.data);
       		
       		var i = 0;
