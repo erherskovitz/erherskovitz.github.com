@@ -10,32 +10,43 @@
       };
    	       	var myMap = new google.maps.Map($("#map-canvas")[0],mapOptions);
    	       	
-   	       	var georssLayer = new google.maps.KmlLayer('https://maps.google.com/maps/ms?authuser=0&vps=2&hl=en&ie=UTF8&msa=0&output=kml&msid=207036911883524595366.0004dc13e0f4ebb53d3f7');
-				georssLayer.setMap(myMap);
+   	       	var tenLayer = new google.maps.KmlLayer('https://maps.google.com/maps/ms?ie=UTF8&authuser=0&msa=0&output=kml&msid=207036911883524595366.0004dc13e0f4ebb53d3f7');
+				tenLayer.setMap(myMap);
 			
 			$("#ten").click( function () {
   				$("#tenhover").show();
-  				$(georssLayer).hide();
+                tenLayer.setMap(null);
 					});
-			$("#tenhover").click( function () {
+
+            $("#tenhover").click( function () {
   				$("#tenhover").hide();
-  				$(".yellow").show();
+                tenLayer.setMap(myMap);
 					});
+			
+			var fortyLayer = new google.maps.KmlLayer('https://maps.google.com/maps/ms?authuser=0&vps=2&ie=UTF8&msa=0&output=kml&msid=207036911883524595366.0004dc22713f969f52c9a');
+				fortyLayer.setMap(myMap);
+				
 			$("#forty").click( function () {
   				$("#fortyhover").show();
-  				$(".orange").hide();
+                fortyLayer.setMap(null);
 					});
-			$("#fortyhover").click( function () {
+
+            $("#fortyhover").click( function () {
   				$("#fortyhover").hide();
-  				$(".orange").show();
+                fortyLayer.setMap(myMap);
 					});
+			
+			var seventyLayer = new google.maps.KmlLayer('https://maps.google.com/maps/ms?authuser=0&vps=3&ie=UTF8&msa=0&output=kml&msid=207036911883524595366.0004dc2278053b234343e');
+				seventyLayer.setMap(myMap);
+			
 			$("#seventy").click( function () {
   				$("#seventyhover").show();
-  				$(".red").hide();
+                seventyLayer.setMap(null);
 					});
-			$("#seventyhover").click( function () {
+
+            $("#seventyhover").click( function () {
   				$("#seventyhover").hide();
-  				$(".red").show();
+                seventyLayer.setMap(myMap);
 					});
 				
       		var i = 0;
