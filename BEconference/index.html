@@ -14,6 +14,7 @@
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   	<script type="text/javascript" src="js/jquery.scrollto.js"></script>
   	<script src="js/jquery.scrollorama.js"></script>
+  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHC2Gks7HDPLANSRptlNGPJfGB8KhT778&amp;sensor=false&amp;libraries=visualization"></script>
 
 	
   </head>
@@ -32,7 +33,8 @@
 			});
 
 			scrollorama
-				.animate('#schedule img',{ duration: 850, property:'right', start:-1400, end:-615 })
+				.animate('#building img',{ duration: 820, property:'left', start:0, end:400 })
+				.animate('#schedule img',{ duration: 820, property:'right', start:-1400, end:-590 })
 				.animate('#paper',{ duration:900, property:'bottom', start:-1000, end:490 });
 			
 			/*var $easing = $('#paper'),
@@ -62,7 +64,17 @@ $('#section2').ScrollTo({
     duration: 2000,
     easing: 'linear'
 });
-
+ $(function() {
+      var mapOptions = {
+      center: new google.maps.LatLng(42.350298,-71.07841),
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP // ROADMAP, SATELLITE, HYBRID, TERRAIN
+      };
+      var map = new google.maps.Map($("#map-canvas")[0],mapOptions);
+      
+      var tenLayer = new google.maps.KmlLayer('https://maps.google.com/maps/ms?authuser=0&vps=2&hl=en&ie=UTF8&msa=0&output=kml&msid=210150725725239595128.00049062221f4aa418a15');
+					tenLayer.setMap(map);
+    });
 
 	$(window).scroll(function(){
 		var scrollTop = 90;
@@ -115,56 +127,57 @@ $('#section2').ScrollTo({
   		 		 </ul>
   		 		 </div>
   		 		 	<div id="map">
-  		 		 		<img id="googlemap" src="images/map.png"/>
+  		 		 		<div id="map-canvas">
+  		 		 		</div>
   		 		 	</div>
   		 		</div>
   		 	</div>
   		 	<div class="scrollblock" id="section2">
   		 	<ul class="names">
   		 		<div class="name" id="lee_teitel">
-  		 		   <a href="x">
+  		 		   <a href="#section3">
   		 			<li><img src="images/lee_teitel.png"/></a></li>
   		 		   </a>
   		 		</div>
   		 		<div class="name" id="steve_seidel">
-  		 		  <a href="x">
+  		 		  <a href="#section3">
   		 			<li><img src="images/steve_seidel.png"/></a></li>
   		 		  </a>
   		 		</div>
   		 		<div class="name" id="pamela_mason">
-  		 			<a href="x">
+  		 			<a href="#section3">
   		 			<li><img src="images/pamela_mason.png"/></a></li>
   		 		  </a>
   		 		</div>
   		 		<div class="name" id="ilona_holland">
-  		 			<a href="x">
+  		 			<a href="#section3">
   		 			<li><img src="images/ilona_holland.png"/></a></li>
   		 		  </a>
   		 		</div>
   		 		<div class="name" id="david_kahle">
-  		 			<a href="x">
+  		 			<a href="#section3">
   		 			<li><img src="images/david_kahle.png"/></a></li>
   		 		  </a>
   		 		</div>
   		 	</ul>
   		 	<ul class="names">
   		 		<div class="name" id="catherine_elgin">
-  		 			<a href="x">
+  		 			<a href="#section3">
   		 			<li><img src="images/catherine_elgin.png"/></a></li>
   		 		  </a>
   		 		</div>
   		 		<div class="name" id="joseph_blatt">
-  		 			<a href="x">
+  		 			<a href="#section3">
   		 			<li><img src="images/joseph_blatt.png"/></a></li>
   		 		  </a>
   		 		</div>
   		 		<div class="name" id="kay_merseth">
-  		 			<a href="x">
+  		 			<a href="#section3">
   		 			<li><img src="images/kay_merseth.png"/></a></li>
   		 		  </a>
   		 		</div>
   		 		<div class="name" id="katherine_boles">
-  		 			<a href="x">
+  		 			<a href="#section3">
   		 			<li><img src="images/katherine_boles.png"/></a></li>
   		 		  </a>
   		 		</div>
@@ -172,10 +185,13 @@ $('#section2').ScrollTo({
   		 	</div>
   		 	<div class="scrollblock" id="section3">
   		 	  <div id="building">
-  		 		<img src="images/central-floor-plan.png"/>
+  		 		<img src="images/bplmap.png"/>
   		 	  </div>
   		 	  <div id="schedule">
-  		 		<img src="images/schedule_big.png" id="move-it" />
+  		 		<img src="images/Orientation.png" id="move-it" />
+  		 	  </div>
+  		 	  <div id="link">
+  		 	  <a href="images/BESchedule.pdf" target="_blank">Download Schedule PDF</a>
   		 	  </div>
   		 	</div>
   		 	

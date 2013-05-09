@@ -184,8 +184,7 @@ ul.nav li a {
   }
   
 #section1 div{
-	margin:0 auto;
-	width:100%;
+	
   }
   
 #section1 img#boston{
@@ -208,6 +207,13 @@ ul.nav li a {
 #section1 li img#september{
 	width:50%;
 }
+#section1 #map #map-canvas {
+	width: 700px;
+	position:absolute;
+	left:120px;
+	top: 320px;
+	height:400px;
+	}
 
 #section1 li img#bpl{
 	width:80%;
@@ -252,18 +258,18 @@ ul.nav li a {
 #section1 #city li img{	
 	width: 60%;
 	position: absolute;
-	margin-left: -500px;
+	left: -100px;
 	margin-top:100px;
 		}
 
-#section1 #map{		
+section1 map{		
 	width: 40%;
 	position: absolute;
 	left: 236px;
 	top: 320px;
 
 		}
-#section1 #map img{		
+ map img{		
 	box-shadow: 3px 1px 15px rgb(0, 0, 0);
 
 		}
@@ -324,6 +330,8 @@ ul.nav li a {
 	margin:0 auto;
   }
 
+
+
 ul.names {
 	float: left;
 	width: 50%;
@@ -358,15 +366,16 @@ div.name img{
 	margin: 0 auto;
   }
 #section3 #building img{
-	width: 49%;
-	margin:0 auto;
+	width: 78%;
+	margin: 0 auto;
+	top: -40px;
   }
 #section3 #schedule{
 	top: 18px;
 	margin: 0 auto;
   }
 #section3 #schedule img{
-	width: 56%;
+	width: 58%;
 	margin:0 auto;
   }
 
@@ -401,15 +410,25 @@ td{
     /* prevent multiline text */
     white-space:nowrap;
 }
-
+#link a {
+		position: absolute;
+		right: 50px;
+		bottom: -279px;
+		color: rgb(52, 70, 77);
+		z-index:1;
+		
+		}
+		
 a, a:visited {
     color:#00BBFF;
     text-decoration:none;
     outline:none;
+    font-family:'Trocchi';
 }
 
 a:hover{
-    text-decoration:underline;
+    text-decoration:none;
+    color: rgb(173, 242, 255);
 }
 
 input{
