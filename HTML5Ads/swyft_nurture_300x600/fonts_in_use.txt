@@ -1,0 +1,15 @@
+
+Fonts actively used in this project
+-----------------------------------
+
+Font name       :   Avenir
+Font provider   :   fonts.com
+
+
+
+******************************************************************************
+
+
+
+
+Created by Typecast on 2016/01/14.

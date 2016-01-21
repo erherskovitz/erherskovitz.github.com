@@ -1,0 +1,20 @@
+
+Fonts actively used in this project
+-----------------------------------
+
+Font name       :   AvenirLTW01-95BlackObli
+Font provider   :   fonts.com
+
+
+
+******************************************************************************Font name       :   HelveticaNeueETW01-75Bd
+Font provider   :   fonts.com
+
+
+
+******************************************************************************
+
+
+
+
+Created by Typecast on 2016/01/14.

@@ -1,0 +1,20 @@
+
+Fonts actively used in this project
+-----------------------------------
+
+Font name       :   HelveticaNeueETW01-55Rg
+Font provider   :   fonts.com
+
+
+
+******************************************************************************Font name       :   Avenir LT W01 85 Heavy
+Font provider   :   fonts.com
+
+
+
+******************************************************************************
+
+
+
+
+Created by Typecast on 2016/01/14.
