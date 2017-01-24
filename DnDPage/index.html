@@ -337,54 +337,69 @@ a.randomize {
 </div>
 
 <a href="" class="randomize">Roll!</a>
+<p class="RollAnswer"></p>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
-  var $die = $('.die'),
-  sides = 20,
-  initialSide = 1,
-  lastFace,
-  timeoutId,
-  transitionDuration = 500,
-  animationDuration  = 3000
+ var $die = $('.die'),
+    sides = 20,
+    initialSide = 1,
+    lastFace,
+    timeoutId,
+    transitionDuration = 500, 
+    animationDuration  = 3000
 
 $('ul > li > a').click(function () {
-reset()
-rollTo($(this).attr('href'))
-
-return false
+  reset()
+  rollTo($(this).attr('href'))
+  
+  
+  return false
 })
 
-function randomFace() {
+function randomFace(face) {
 var face = Math.floor((Math.random() * sides)) + initialSide
 lastFace = face == lastFace ? randomFace() : face
 return face;
 }
 
 function rollTo(face) {
-clearTimeout(timeoutId)
-
-$('ul > li > a').removeClass('active')
-$('[href=' + face + ']').addClass('active')
-
-$die.attr('data-face', face)
+  clearTimeout(timeoutId)
+  
+  $('ul > li > a').removeClass('active')
+  $('[href=' + face + ']').addClass('active')
+  
+  $die.attr('data-face', face)
+  
+  $("h2#result").append("You rolled a " + face)
+  
+  return false
 }
 
+$( '.randomize, .die' ).click(function( face ) {
+  return face;
+});
+$( '.randomize, .die' ).click(function( face ) {
+  $( "h2#result" ).html( face.result );
+});
+
 function reset() {
-$die.attr('data-face', null).removeClass('rolling')
+  $die.attr('data-face', null).removeClass('rolling')
+  
 }
 
 $('.randomize, .die').click(function () {
-$die.addClass('rolling')
-clearTimeout(timeoutId)
-
-timeoutId = setTimeout(function () {
-  $die.removeClass('rolling')
-
-  rollTo(randomFace())
-}, animationDuration)
-
-return false
+  $die.addClass('rolling')
+  clearTimeout(timeoutId)
+  
+  timeoutId = setTimeout(function () {
+    $die.removeClass('rolling')
+    
+    rollTo(randomFace())
+  }, animationDuration)
+  
+  return false
 })
+
 </script>
 <script type="text/javascript">( function(){ window.SIG_EXT = {}; } )()</script>
 </body>
